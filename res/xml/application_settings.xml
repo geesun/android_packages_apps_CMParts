@@ -15,6 +15,12 @@
             android:summary="@string/pref_install_location_summary"
             android:entries="@array/entries_install_location"
             android:entryValues="@array/values_install_location" />
+    <!-- Geesun Add -->
+      <ListPreference 
+        android:key="taskmgr_app_pref" 
+        android:dialogTitle="@string/pref_taskmgr_app_title"
+        android:title="@string/pref_taskmgr_app_title"
+        android:summary="@string/pref_taskmgr_app_summary" />
 
         <Preference
             android:key="phone_goggles_settings"

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- General settings -->
+    <PreferenceCategory android:key="general_category" android:title="@string/general_title">
+   
+    <CheckBoxPreference
+	   android:key="adb_wifi"
+	   android:title="@string/adb_wifi_title"
+	   android:summaryOn="@string/adb_wifi_summary_on"
+       android:summaryOff="@string/adb_wifi_summary_off"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/remount_sys">
+
+        <PreferenceScreen
+            android:key="remount_rw"
+            android:title="@string/remount_rw_title"
+            android:summary="@string/remount_rw_summary">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="remount_ro"
+            android:title="@string/remount_ro_title"
+            android:summary="@string/remount_ro_summary">
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory
+	 android:title="@string/reboot_title">
+
+	<PreferenceScreen
+	   android:key="reboot_reboot"
+	   android:title="@string/reboot_title"
+	   android:summary="@string/reboot_summary">
+	</PreferenceScreen>
+
+	<PreferenceScreen
+	   android:key="reboot_recovery"
+	   android:title="@string/reboot_recovery_title"
+	   android:summary="@string/reboot_recovery_summary">
+	</PreferenceScreen>
+
+	<PreferenceScreen
+	   android:key="reboot_bootloader"
+	   android:title="@string/reboot_bootloader_title"
+	   android:summary="@string/reboot_bootloader_summary">
+	</PreferenceScreen>
+
+    <PreferenceScreen
+	   android:key="shutdown_shutdown"
+	   android:title="@string/shutdown_title"
+	   android:summary="@string/shutdown_summary">
+	</PreferenceScreen>
+      </PreferenceCategory>
+</PreferenceScreen>

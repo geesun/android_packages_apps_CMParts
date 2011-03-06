@@ -75,20 +75,44 @@
         <item>随机</item>
         <item>无</item>
     </string-array>
+    <string-array name="pref_overscroll_effect_entries">
+        <item>无</item>
+        <item>边缘闪亮</item>
+        <item>反弹并闪亮</item>
+        <item>反弹</item>
+    </string-array>
 
-    <string-array name="pref_trackball_colors_values" translatable="false">
-        <item>green</item>
-        <item>white</item>
-        <item>red</item>
-        <item>blue</item>
-        <item>yellow</item>
-        <item>cyan</item>
-        <item>#800080</item>
-        <item>#ffc0cb</item>
-        <item>#ffa500</item>
-        <item>#add8e6</item>
-        <item>random</item>
-        <item>none</item>
+    <string-array name="pref_lockscreen_music_headset_entries">
+        <item>禁止</item>
+        <item>耳机</item>
+        <item>蓝牙耳机</item>
+        <item>均显示</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget" translatable="false">
+        <item>声音+振动/振动</item>
+        <item>声音/振动</item>
+        <item>声音/静音</item>
+        <item>声音+振动/振动/静音</item>
+        <item>声音/振动/静音</item>
+        <item>声音+振动/声音/振动/静音</item>
+    </string-array>
+
+
+    <string-array name="entries_overscroll_weight">
+        <item>较重</item>
+        <item>过度</item>
+        <item>中等</item>
+        <item>轻量</item>
+        <item>较轻</item>
+    </string-array>
+
+
+    <string-array name="pref_lockscreen_style_entries">
+        <item>滑动条解锁</item>
+        <item>彩虹桥解锁</item>
+        <item>增强彩虹桥</item>
+        <item>下拉式解锁</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">

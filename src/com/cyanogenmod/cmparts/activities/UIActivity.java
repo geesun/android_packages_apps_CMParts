@@ -43,6 +43,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
 
     private static final String GENERAL_CATEGORY = "general_category";
 
+    private static final String DISPLAY_LUNAR_LOCK = "display_lunar_lockscreen";
+
     private PreferenceScreen mStatusBarScreen;
 
     private PreferenceScreen mNotificationScreen;
@@ -68,6 +70,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
 
     private ListPreference mRenderEffectPref;
 
+    private CheckBoxPreference mDisplayLunarLockPref;
+
     private ListPreference mOverscrollPref;
 
     private ListPreference mOverscrollWeightPref;
@@ -92,6 +96,11 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
                     .removePreference(mTrackballScreen);
         }
 
+        mDisplayLunarLockPref = (CheckBoxPreference)prefSet.findPreference(DISPLAY_LUNAR_LOCK);
+        mDisplayLunarLockPref.setChecked(Settings.System.getInt(
+                    getContentResolver(),
+                    Settings.System.DISPLAY_LUNAR_LOCKSCREEN, 0) != 0);
+       
         /* Pinch reflow */
         mPinchReflowPref = (CheckBoxPreference) prefSet.findPreference(PINCH_REFLOW_PREF);
         mPinchReflowPref.setChecked(Settings.System.getInt(getContentResolver(),
@@ -144,6 +153,12 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
                     value ? 1 : 0);
             return true;
         }
+
+       if (preference == mDisplayLunarLockPref){
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.DISPLAY_LUNAR_LOCKSCREEN,
+                    mDisplayLunarLockPref.isChecked() ? 1 : 0);
+          }
         return false;
     }
 

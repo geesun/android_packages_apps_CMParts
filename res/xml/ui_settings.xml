@@ -41,7 +41,13 @@
 		<CheckBoxPreference android:key="pref_pinch_reflow"
 			android:title="@string/pref_pinch_reflow_title" android:summary="@string/pref_pinch_reflow_summary" />
 	</PreferenceCategory>
-
+   <PreferenceCategory android:title="@string/ui_lockscreen_title">
+        <CheckBoxPreference
+            android:key="display_lunar_lockscreen"
+            android:title="@string/title_general_display_lunar_lockscreen"
+            android:summaryOn="@string/summary_on_general_display_lunar_lockscreen"
+            android:summaryOff="@string/summary_off_general_display_lunar_lockscreen" />
+    </PreferenceCategory>
 	<PreferenceCategory android:title="@string/ui_overscroll_title">
 		<ListPreference android:key="pref_overscroll_effect"
 			android:dialogTitle="@string/pref_overscroll_title" android:title="@string/pref_overscroll_title"

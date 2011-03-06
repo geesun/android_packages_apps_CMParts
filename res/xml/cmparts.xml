@@ -35,6 +35,14 @@
             android:targetClass="com.cyanogenmod.cmparts.activities.UIActivity" />
     </PreferenceScreen>
 
+    <!-- Development Settings -->
+    <PreferenceScreen android:key="development_settings"
+        android:title="@string/dev_title" android:summary="@string/dev_summary">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.cmparts"
+            android:targetClass="com.cyanogenmod.cmparts.activities.DevActivity" />
+    </PreferenceScreen>
+
     <!-- Lockscreen Settings -->
     <PreferenceScreen android:key="lockscreen_settings"
         android:title="@string/lockscreen_settings_title_head"

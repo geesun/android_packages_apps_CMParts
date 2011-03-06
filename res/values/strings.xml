@@ -535,6 +535,53 @@
     <string name="phone_goggles_confirmation_prompt">Prompt</string>
     <string name="phone_goggles_confirmation_maths">Math problems</string>
 
+    <!-- Geesun -->
+    <string name="dev_title">Development</string>
+    <string name="dev_summary">Development settings &amp; tweaks</string>
+
+    <string name="adb_wifi_title">ADB wireless mode</string>
+    <string name="adb_wifi_summary_on">ADB daemon started in wireless mode</string>
+    <string name="adb_wifi_summary_off">ADB daemon started in usb mode</string>
+    <string name="activate_stock_a2sd">Activating stock app2sd...</string>
+    <string name="adb_wifi_on">Starting ADB in wireless mode...</string>
+    <string name="adb_wifi_off">Starting ADB in usb mode...</string>
+    <string name="instructions">Instructions</string>
+    <string name="adb_instructions_on_with_address">"Your computer and device must be on the same network.\n\nYou also have to start adb in wireless mode from your computer, run:\n adb connect"</string>
+    <string name="adb_instructions_on_without_address">Your device Wi-Fi must be on, and your computer and device must be on the same network.\n\nYou also have to start adb in wireless mode from your computer, run:\n$ adb connect \'IP address\':%P%</string>
+    <string name="adb_instructions_off">You must plug the usb to get adb access from your computer.\n\nYou also have to restart adb in usb mode from your computer, run:\n$ adb usb</string>
+
+
+    <string name="remount_sys">Remount /system</string>
+    <string name="remount_rw_title">Read-Write</string>
+    <string name="remount_rw_summary"> Remount /system with RW permissions</string>
+    <string name="remount_ro_title">Read-Only</string>
+    <string name="remount_ro_summary"> Remount /system with RO permissions</string>
+    <string name="remounting">Remounting...</string>
+
+
+    <string name="shutdown_title">Shutdown</string>
+    <string name="shutdown_summary"> Do a normal shutdown</string>
+    <string name="reboot_title">Reboot</string>
+    <string name="reboot_summary"> Do a normal reboot</string>
+    <string name="reboot_recovery_title">Reboot recovery</string>
+    <string name="reboot_recovery_summary"> Reboot into recovery</string>
+    <string name="reboot_bootloader_title">Reboot bootloader</string>
+    <string name="reboot_bootloader_summary"> Reboot into bootloader</string>
+    <string name="shuting_down">Shuting down...</string>
+    <string name="rebooting">Rebooting...</string>
+
+
+
+    <string name="title_general_use_rotary_lockscreen">Use Rotary Lockscreen</string>
+    <string name="summary_on_general_use_rotary_lockscreen">Rotary lockscreen will be used</string>
+    <string name="summary_off_general_use_rotary_lockscreen">Rotary lockscreen will not be used</string>
+
+    <string name="title_general_display_lunar_lockscreen">Display Lunar On Lockscreen</string>
+    <string name="summary_on_general_display_lunar_lockscreen">Lunar will display on Lockscreen</string>
+    <string name="summary_off_general_display_lunar_lockscreen">Lunar won\'t display on Lockscreen</string>
+     <string name="pref_taskmgr_app_title">Select Task Manager</string>
+    <string name="pref_taskmgr_app_summary">Select default Task Manager</string>
+
     <!-- CPU Settings strings -->
     <string name="cpu_settings_title">CPU settings</string>
     <string name="cpu_title">CPU settings</string>
