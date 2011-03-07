@@ -152,13 +152,11 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
             Settings.System.putInt(getContentResolver(), Settings.System.POWER_DIALOG_PROMPT,
                     value ? 1 : 0);
             return true;
-        }
-
-       if (preference == mDisplayLunarLockPref){
+        }else if (preference == mDisplayLunarLockPref){
             Settings.System.putInt(getContentResolver(),
                     Settings.System.DISPLAY_LUNAR_LOCKSCREEN,
                     mDisplayLunarLockPref.isChecked() ? 1 : 0);
-          }
+        }
         return false;
     }
 
