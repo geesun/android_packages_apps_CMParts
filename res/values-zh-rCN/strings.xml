@@ -474,6 +474,22 @@
     <string name="summary_on_general_display_lunar_lockscreen">锁屏将显示农历</string>
     <string name="summary_off_general_display_lunar_lockscreen">锁屏不显示农历</string>
 
+
+  <!-- App2 Ext -->
+    <string name="title_app2ext">AppToExt</string>
+    <string name="summary_app2ext">移动App,Cache,Download到SD卡ext分区</string>
+    <string name="status">状态</string>
+    <string name="spaces">剩余空间</string>
+    <string name="apps">应用程序</string>
+    <string name="private_apps">私有apps</string>
+    <string name="dalvik_cache">Dalvik缓存</string>
+    <string name="download_cache">下载缓存</string>
+    <string name="move_to_ext">移动到sd-ext分区(重启生效)</string>
+    <string name="location">位置</string>
+    <string name="size">大小</string>
+    <string name="used">已用</string>
+    <string name="free">剩余</string>
+
     <string name="title_widget_order">选择小工具排序</string>
     <string name="summary_widget_order">排序小工具按钮</string>
     <string name="title_buttons">按钮</string>

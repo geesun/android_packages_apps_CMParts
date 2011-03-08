@@ -15,6 +15,15 @@
             android:summary="@string/pref_install_location_summary"
             android:entries="@array/entries_install_location"
             android:entryValues="@array/values_install_location" />
+
+        <Preference
+            android:key="app2ext_settings"
+            android:title="@string/title_app2ext"
+            android:summary="@string/summary_app2ext">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="com.cyanogenmod.cmparts"
+                    android:targetClass="com.cyanogenmod.cmparts.activities.App2extActivity" />
+        </Preference>
     <!-- Geesun Add -->
       <ListPreference 
         android:key="taskmgr_app_pref" 

@@ -581,6 +581,23 @@
     <string name="summary_off_general_display_lunar_lockscreen">Lunar won\'t display on Lockscreen</string>
      <string name="pref_taskmgr_app_title">Select Task Manager</string>
     <string name="pref_taskmgr_app_summary">Select default Task Manager</string>
+    
+    <!-- App2 Ext -->
+    <string name="title_app2ext">AppToExt</string>
+    <string name="summary_app2ext">Move App,Cache,Download to SD ext</string>
+    <string name="status">Status</string>
+    <string name="spaces">Free space</string>
+    <string name="apps">Applications</string>
+    <string name="private_apps">Private apps</string>
+    <string name="dalvik_cache">Dalvik cache</string>
+    <string name="download_cache">Download cache</string>
+    <string name="move_to_ext">Move to sd-ext(Reboot take effect)</string>
+    <string name="location">Location</string>
+    <string name="size">Size</string>
+    <string name="used">Used</string>
+    <string name="free">Free</string>
+
+
 
     <!-- CPU Settings strings -->
     <string name="cpu_settings_title">CPU settings</string>

@@ -1,0 +1,142 @@
+#!/system/bin/sh
+
+# Initialization and checks
+TAG="CM7-App2Ext:"
+log -p i -t app2sd "$TAG Initialization..."
+
+PKG="com.cyanogenmod.cmparts"
+APP2EXT_PREF="/data/data/$PKG/shared_prefs/${PKG}_preferences.xml"
+APP2EXT_STATUS="/data/data/$PKG/status"
+
+#Check the mount point is exist or not
+if [ "$SD_EXT_DIRECTORY" = "" ];
+then
+	SD_EXT_DIRECTORY=/sd-ext
+fi
+if [ "`egrep -q $SD_EXT_DIRECTORY /proc/mounts;echo $?`" != "0" ];
+then
+	log -p i -t app2sd "$TAG: $SD_EXT_DIRECTORY not mounted... Exit!"
+	exit
+fi
+
+#Make the status directory and remove the exist files
+if [ ! -e $APP2EXT_STATUS ];
+then
+    mkdir  $APP2EXT_STATUS
+fi
+if [ ! -L $APP2EXT_STATUS ];
+then
+    rm -rf $APP2EXT_STATUS/*
+fi
+
+# Apps and Private Apps
+for dir in app app-private;
+    do
+    CONFIG=`grep -q "name=\"$dir\" value=\"true\"" $APP2EXT_PREF;echo  $?`
+    if [ "$CONFIG" = "0" ];
+    then
+        if [ "`egrep -q \"/data/$dir\" /proc/mounts;echo $?`" != "0" ];
+        then
+            if [ ! -e "$SD_EXT_DIRECTORY/$dir" ];
+            then
+                mkdir $SD_EXT_DIRECTORY/$dir
+                chown system:system $SD_EXT_DIRECTORY/$dir
+                chmod 0771 $SD_EXT_DIRECTORY/$dir
+            fi
+            if [ -L "/data/$dir" ];
+            then
+                chown system:system /data/$dir
+                chmod 0771 /data/$dir
+            fi
+
+            for app in `find "/data/$dir" -type f -iname "*.apk" -o -iname "*.zip"`;
+            do
+                mv $app $SD_EXT_DIRECTORY/$dir/
+            done
+
+            mount -o bind $SD_EXT_DIRECTORY/$dir/ /data/$dir
+
+            if [ "`egrep -q \"/data/$dir\" /proc/mounts;echo $?`" = "0" ];
+            then
+
+                log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/$dir mount as /data/$dir"
+                touch $APP2EXT_STATUS/$dir
+            else
+                log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/$dir not mount..."
+            fi
+        else
+            log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/$dir already mount..."
+        fi
+    fi
+done
+
+# Dalvik-Cache
+CONFIG=`grep -q "name=\"dalvik-cache\" value=\"true\"" $APP2EXT_PREF;echo $?`
+if [ "$CONFIG" = "0" ];
+then
+    if [ "`egrep -q \"/data/dalvik-cache\" /proc/mounts;echo $?`" != "0" ];
+    then
+        if [ ! -e "$SD_EXT_DIRECTORY/dalvik-cache" ];
+        then
+            mkdir $SD_EXT_DIRECTORY/dalvik-cache
+        fi
+        if [ ! -L "/data/dalvik-cache" ];
+        then
+            rm -rf /data/dalvik-cache
+            mkdir /data/dalvik-cache
+        fi
+        chown system:system $SD_EXT_DIRECTORY/dalvik-cache
+        chmod 0771 $SD_EXT_DIRECTORY/dalvik-cache
+        chown system:system /data/dalvik-cache
+        chmod 0771 /data/dalvik-cache
+
+        mount -o bind $SD_EXT_DIRECTORY/dalvik-cache/ /data/dalvik-cache
+
+        if [ "`egrep -q \"/data/dalvik-cache\" /proc/mounts;echo $?`" = "0" ];
+        then
+            log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/dalvik-cache mount as /data/dalvik-cache"
+            touch $APP2EXT_STATUS/dalvik-cache
+        else
+            log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/dalvik-cache not mount..."
+        fi
+    else
+        log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/dalvik-cache already mount..."
+    fi
+fi
+
+# Download cache
+CONFIG=`grep -q "name=\"download\" value=\"true\"" $APP2EXT_PREF;echo $?`
+if [ "$CONFIG" = "0" ];
+then
+    if [ "`egrep -q \"/cache/download\" /proc/mounts;echo $?`" = "0" ];
+    then
+        umount /cache/download
+        log -p i -t app2sd "$TAG unmount /cache/download..."
+    fi
+    if [ ! -e "$SD_EXT_DIRECTORY/download" ];
+    then
+        mkdir $SD_EXT_DIRECTORY/download
+    fi
+    if [ ! -L "/cache/download" ];
+    then
+        rm -rf /cache/download
+        mkdir /cache/download
+    fi
+    chown system:cache $SD_EXT_DIRECTORY/download
+    chmod 0771 $SD_EXT_DIRECTORY/download
+    chown system:cache /cache/download
+    chmod 0771 /cache/download
+
+    mount -o bind $SD_EXT_DIRECTORY/download/ /cache/download
+
+    if [ "`egrep -q \"/cache/download\" /proc/mounts;echo  $?`" = "0" ];
+    then
+        log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/download mount as /cache/download"
+        touch $APP2EXT_STATUS/download
+    else
+        log -p i -t app2sd "$TAG $SD_EXT_DIRECTORY/download not mount..."
+    fi
+fi
+
+# Finish
+log -p i -t app2sd "$TAG Done!"
