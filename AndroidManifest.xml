@@ -263,7 +263,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activities.App2extActivity" android:label="@string/dev_title">
+        <activity android:name=".activities.App2extActivity" android:label="@string/title_app2ext">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="com.cyanogenmod.cmparts.SHORTCUT"/>

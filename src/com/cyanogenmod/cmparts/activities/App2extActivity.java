@@ -125,7 +125,8 @@ public class App2extActivity extends PreferenceActivity {
     private  long dirSize(File dir) {
         long result = 0;
         File[] fileList = dir.listFiles();
-
+	if(fileList == null)
+		return 0;
         for(int i = 0; i < fileList.length; i++) {
             if(fileList[i].isDirectory()) {
                 result += dirSize(fileList [i]);
