@@ -609,4 +609,8 @@
     <string name="ui_status_bar_clock_summary">隐藏状态栏时钟</string>
     <string name="ui_status_bar_cm_battery_title">电池百分比</string>
     <string name="ui_status_bar_cm_battery_summary">显示迷你百分比电池图片.如果选择主题后电池不美观，请取消显示电池百分比</string>
+
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">启用自清除空间</string>
+    <string name="pref_purgeable_assets_summary">允许系统自动清除内存(要求重启)</string>
 </resources>
