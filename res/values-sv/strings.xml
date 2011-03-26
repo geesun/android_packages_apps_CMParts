@@ -266,6 +266,10 @@
     <string name="pref_use_dithering_title">Aktivera ytgråtonsändring</string>
     <string name="pref_use_dithering_summary">Gråtonsändring av ytor förbättrar bildkvaliteten på bekostnad av prestanda (kräver omstart)</string>
 
+    <!-- Performance Settings : Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Tillåt utrensning av tillgångar</string>
+    <string name="pref_purgeable_assets_summary">Systemet kan fria upp mer minne när det behövs, om minnet med bitmap-tillgångarna kan återtas. (kräver omstart)</string>
+
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
     <string name="pref_heapsize_summary">Största storlek av minne per VM heap (kräver omstart)</string>
@@ -361,7 +365,6 @@
     <string name="pref_ring_mode_summary">Välj hur knappen för ljud ändrar lägen</string>
     <string name="pref_flash_mode_title">Blixtläge</string>
     <string name="pref_flash_mode_summary">Välj Hög / Death Ray(Evo)</string>
-    <string name="widget_max_buttons">6 är det högsta antalet knappar.</string>
 
     <!-- Backlight -->
     <string name="backlight_title">Automatiskt bakgrundsljus</string>
