@@ -474,6 +474,10 @@
     <string name="summary_on_general_display_lunar_lockscreen">锁屏将显示农历</string>
     <string name="summary_off_general_display_lunar_lockscreen">锁屏不显示农历</string>
 
+    <string name="title_carrier_caption">锁屏自定义运营商信息</string>
+    <string name="summary_carrier_caption">更改锁屏运营商信息</string>
+    <string name="diaglo_gtitle_carrier_caption">输入自定义运营商信息</string>
+
 
   <!-- App2 Ext -->
     <string name="title_app2ext">AppToExt</string>
@@ -613,4 +617,16 @@
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">启用自清除空间</string>
     <string name="pref_purgeable_assets_summary">允许系统自动清除内存(要求重启)</string>
+    <!-- Performance : Lock phone app in memory -->
+    <string name="pref_lock_phone_title">锁定联系人程序的内存空间</string>
+    <string name="pref_lock_phone_summary">使联系人程序快速加载</string>
+    
+    <!-- Performance : Lock contacts app in memory -->
+    <string name="pref_lock_contacts_title">锁定拨号程序的内存空间</string>
+    <string name="pref_lock_contacts_summary">使拨号程序快速加载</string>
+    
+    <!-- Performance : Lock Superuser app in memory -->
+    <string name="pref_lock_su_title">锁定授权管理程序的内存空间</string>
+    <string name="pref_lock_su_summary">禁止需要su权限的询问提示</string>
+
 </resources>

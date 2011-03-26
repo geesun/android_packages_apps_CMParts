@@ -269,6 +269,18 @@
     <!-- Performance Settings : Purgeable Assets -->
     <string name="pref_purgeable_assets_title">Allow purging of assets</string>
     <string name="pref_purgeable_assets_summary">System can free more RAM when needed if asset bitmap memory can be reclaimed (requires reboot)</string>
+    <!-- Performance : Lock phone app in memory -->
+    <string name="pref_lock_phone_title">Lock phone app in memory</string>
+    <string name="pref_lock_phone_summary">Makes phone load very fast</string>
+
+    <!-- Performance : Lock contacts app in memory -->
+    <string name="pref_lock_contacts_title">Lock contacts app in memory</string>
+    <string name="pref_lock_contacts_summary">Makes contacts load very fast</string>
+
+    <!-- Performance : Lock Superuser app in memory -->
+    <string name="pref_lock_su_title">Lock Superuser app in memory</string>
+    <string name="pref_lock_su_summary">Avoid non-granting SU rights</string>
+
 
     <!-- Performance Settings : VM Heap Size -->
     <string name="pref_heapsize_title">VM heap size</string>
@@ -582,6 +594,11 @@
     <string name="title_general_display_lunar_lockscreen">Display Lunar On Lockscreen</string>
     <string name="summary_on_general_display_lunar_lockscreen">Lunar will display on Lockscreen</string>
     <string name="summary_off_general_display_lunar_lockscreen">Lunar won\'t display on Lockscreen</string>
+
+    <string name="title_carrier_caption">Lockscreen Carrier Caption</string>
+    <string name="summary_carrier_caption">Change the lockscreen carrier caption.</string>
+    <string name="diaglo_gtitle_carrier_caption">Enter lockscreen caption.</string>
+
      <string name="pref_taskmgr_app_title">Select Task Manager</string>
     <string name="pref_taskmgr_app_summary">Select default Task Manager</string>
     

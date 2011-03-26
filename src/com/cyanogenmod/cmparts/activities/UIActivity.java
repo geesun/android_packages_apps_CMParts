@@ -23,16 +23,19 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.EditTextPreference;
+import android.content.SharedPreferences;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.provider.Settings;
+import android.util.Log;
 
 import com.cyanogenmod.cmparts.R;
 
-public class UIActivity extends PreferenceActivity implements OnPreferenceChangeListener {
+public class UIActivity extends PreferenceActivity implements OnPreferenceChangeListener{
 
     /* Preference Screens */
     private static final String NOTIFICATION_SCREEN = "notification_settings";
@@ -44,6 +47,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     private static final String GENERAL_CATEGORY = "general_category";
 
     private static final String DISPLAY_LUNAR_LOCK = "display_lunar_lockscreen";
+
+    private static final String CARRIER_CAP = "carrier_caption";
 
     private PreferenceScreen mStatusBarScreen;
 
@@ -71,6 +76,8 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
     private ListPreference mRenderEffectPref;
 
     private CheckBoxPreference mDisplayLunarLockPref;
+
+    private EditTextPreference mCarrierCaption;
 
     private ListPreference mOverscrollPref;
 
@@ -100,6 +107,9 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
         mDisplayLunarLockPref.setChecked(Settings.System.getInt(
                     getContentResolver(),
                     Settings.System.DISPLAY_LUNAR_LOCKSCREEN, 0) != 0);
+
+        mCarrierCaption = (EditTextPreference) findPreference(CARRIER_CAP);
+        mCarrierCaption.setOnPreferenceChangeListener(this);
        
         /* Pinch reflow */
         mPinchReflowPref = (CheckBoxPreference) prefSet.findPreference(PINCH_REFLOW_PREF);
@@ -173,6 +183,10 @@ public class UIActivity extends PreferenceActivity implements OnPreferenceChange
             int overscrollWeight = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(), Settings.System.OVERSCROLL_WEIGHT,
                     overscrollWeight);
+            return true;
+        }else if(preference == mCarrierCaption) {
+            Log.e("Geesun", newValue.toString() );
+            Settings.System.putString(getContentResolver(),Settings.System.CARRIER_CAP, newValue.toString());
             return true;
         }
         return false;

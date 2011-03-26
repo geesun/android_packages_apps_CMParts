@@ -79,9 +79,23 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
 
     private static final String LOCK_MMS_PREF = "pref_lock_mms";
 
+    private static final String LOCK_PHONE_PREF = "pref_lock_phone";
+
+    private static final String LOCK_CONTACTS_PREF = "pref_lock_contacts";
+
+    private static final String LOCK_SU_PREF = "pref_lock_su";
+
+
     private static final int LOCK_HOME_DEFAULT = 0;
 
     private static final int LOCK_MMS_DEFAULT = 0;
+
+    private static final int LOCK_PHONE_DEFAULT = 0;
+
+    private static final int LOCK_CONTACTS_DEFAULT = 0;
+
+    private static final int LOCK_SU_DEFAULT = 0;
+
 
     private ListPreference mCompcachePref;
 
@@ -94,6 +108,12 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private CheckBoxPreference mLockHomePref;
 
     private CheckBoxPreference mLockMmsPref;
+
+    private CheckBoxPreference mLockPhonePref;
+
+    private CheckBoxPreference mLockContactsPref;
+
+    private CheckBoxPreference mLockSuPref;
 
     private ListPreference mHeapsizePref;
 
@@ -149,6 +169,19 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         mLockMmsPref.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.LOCK_MMS_IN_MEMORY, LOCK_MMS_DEFAULT) == 1);
 
+        mLockPhonePref = (CheckBoxPreference) prefSet.findPreference(LOCK_PHONE_PREF);
+        mLockPhonePref.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCK_PHONE_IN_MEMORY, LOCK_PHONE_DEFAULT) == 1);
+
+        mLockContactsPref = (CheckBoxPreference) prefSet.findPreference(LOCK_CONTACTS_PREF);
+        mLockContactsPref.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCK_CONTACTS_IN_MEMORY, LOCK_CONTACTS_DEFAULT) == 1);
+
+        mLockSuPref = (CheckBoxPreference) prefSet.findPreference(LOCK_SU_PREF);
+        mLockSuPref.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCK_SUPERUSER_IN_MEMORY, LOCK_SU_DEFAULT) == 1);
+
+
         // Set up the warning
         alertDialog = new AlertDialog.Builder(this).create();
         alertDialog.setTitle(R.string.performance_settings_warning_title);
@@ -162,39 +195,58 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
         alertDialog.show();
     }
     @Override
-    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
-	if (preference == mJitPref) {
-            SystemProperties.set(JIT_PERSIST_PROP,
-                    mJitPref.isChecked() ? JIT_ENABLED : JIT_DISABLED);
-            return true;
-        }
+        public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+            if (preference == mJitPref) {
+                SystemProperties.set(JIT_PERSIST_PROP,
+                        mJitPref.isChecked() ? JIT_ENABLED : JIT_DISABLED);
+                return true;
+            }
 
-        if (preference == mUseDitheringPref) {
-            SystemProperties.set(USE_DITHERING_PERSIST_PROP,
-                    mUseDitheringPref.isChecked() ? "1" : "0");
-            return true;
-        }
+            if (preference == mUseDitheringPref) {
+                SystemProperties.set(USE_DITHERING_PERSIST_PROP,
+                        mUseDitheringPref.isChecked() ? "1" : "0");
+                return true;
+            }
 
-        if (preference == mPurgeableAssetsPref) {
-            SystemProperties.set(PURGEABLE_ASSETS_PERSIST_PROP,
-                    mPurgeableAssetsPref.isChecked() ? "1" : "0");
-            return true;
-        }
+            if (preference == mPurgeableAssetsPref) {
+                SystemProperties.set(PURGEABLE_ASSETS_PERSIST_PROP,
+                        mPurgeableAssetsPref.isChecked() ? "1" : "0");
+                return true;
+            }
 
-        if (preference == mLockHomePref) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LOCK_HOME_IN_MEMORY, mLockHomePref.isChecked() ? 1 : 0);
-            return true;
-        }
+            if (preference == mLockHomePref) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.LOCK_HOME_IN_MEMORY, mLockHomePref.isChecked() ? 1 : 0);
+                return true;
+            }
 
-        if (preference == mLockMmsPref) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.LOCK_MMS_IN_MEMORY, mLockMmsPref.isChecked() ? 1 : 0);
-            return true;
-        }
+            if (preference == mLockMmsPref) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.LOCK_MMS_IN_MEMORY, mLockMmsPref.isChecked() ? 1 : 0);
+                return true;
+            }
 
-        return false;
-    }
+            if (preference == mLockPhonePref) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.LOCK_PHONE_IN_MEMORY, mLockPhonePref.isChecked() ? 1 : 0);
+                return true;
+            }
+
+            if (preference == mLockContactsPref) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.LOCK_CONTACTS_IN_MEMORY, mLockContactsPref.isChecked() ? 1 : 0);
+                return true;
+            }
+
+            if (preference == mLockSuPref) {
+                Settings.System.putInt(getContentResolver(),
+                        Settings.System.LOCK_SUPERUSER_IN_MEMORY, mLockSuPref.isChecked() ? 1 : 0);
+                return true;
+            }
+
+
+            return false;
+        }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mHeapsizePref) {
@@ -208,7 +260,7 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
             if (newValue != null) {
                 SystemProperties.set(COMPCACHE_PERSIST_PROP, (String)newValue);
                 return true;
-	    }
+            }
         }
 
         return false;
