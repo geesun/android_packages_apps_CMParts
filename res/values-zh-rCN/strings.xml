@@ -54,7 +54,6 @@
     <string name="title_color_picker">选择颜色</string>
     <string name="msg_color_picker">点击中间的颜色进行确认。\n点击返回键取消。</string>
 
-
     <!-- User interface: Trackball notifcations -->
     <string name="trackball_notifications_title">轨迹球通知颜色</string>
     <string name="dialog_color_trackball">选择颜色</string>
