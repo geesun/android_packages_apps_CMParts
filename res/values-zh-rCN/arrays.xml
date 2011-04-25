@@ -219,4 +219,30 @@
         <item>音乐音量 (默认)</item>
     </string-array>
 
+    <string-array name="entries_vol_actions">
+        <item>无/默认</item>
+        <item>主页</item>
+        <item>菜单</item>
+        <item>后退</item>
+        <item>搜索</item>
+        <item>电源</item>
+        <item>呼叫</item>
+        <item>结束呼叫</item>
+        <item>播放/暂停</item>
+        <item>下一首</item>
+        <item>上一首</item>
+        <item>长按主页键</item>
+    </string-array>
+
+
+    <string-array name="entries_unhide_button">
+        <item>主页</item>
+        <item>菜单</item>
+        <item>后退</item>
+        <item>搜索</item>
+        <item>相机</item>
+        <item>加大声音</item>
+        <item>减弱声音</item>
+    </string-array>
+
 </resources>
