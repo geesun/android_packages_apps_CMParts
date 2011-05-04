@@ -86,15 +86,15 @@ public class PerformanceSettingsActivity extends PreferenceActivity implements P
     private static final String LOCK_SU_PREF = "pref_lock_su";
 
 
-    private static final int LOCK_HOME_DEFAULT = 0;
+    private static final int LOCK_HOME_DEFAULT = 1;
 
-    private static final int LOCK_MMS_DEFAULT = 0;
+    private static final int LOCK_MMS_DEFAULT = 1;
 
-    private static final int LOCK_PHONE_DEFAULT = 0;
+    private static final int LOCK_PHONE_DEFAULT = 1;
 
-    private static final int LOCK_CONTACTS_DEFAULT = 0;
+    private static final int LOCK_CONTACTS_DEFAULT = 1;
 
-    private static final int LOCK_SU_DEFAULT = 0;
+    private static final int LOCK_SU_DEFAULT = 1;
 
 
     private ListPreference mCompcachePref;
