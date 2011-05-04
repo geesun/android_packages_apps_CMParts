@@ -671,4 +671,8 @@
     <string name="pref_lock_su_title">锁定授权管理程序的内存空间</string>
     <string name="pref_lock_su_summary">禁止需要su权限的询问提示</string>
 
+    <string name="sound_vibrate_in_call_title">呼叫时震动</string>
+    <string name="sound_vibrate_in_call_summary_off">呼叫时不震动提示</string>
+    <string name="sound_vibrate_in_call_summary_on">呼叫时震动提示</string>
+
 </resources>
