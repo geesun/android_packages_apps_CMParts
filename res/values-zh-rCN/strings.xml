@@ -674,5 +674,8 @@
     <string name="sound_vibrate_in_call_title">呼叫时震动</string>
     <string name="sound_vibrate_in_call_summary_off">呼叫时不震动提示</string>
     <string name="sound_vibrate_in_call_summary_on">呼叫时震动提示</string>
-
+    <string name="ui_status_bar_compact_carrier_title">缩小运营商标签</string>
+    <string name="ui_status_bar_compact_carrier_summary">拉下通知栏时使用较小的运营商标签</string>
+    <string name="title_expanded_hide_scrollbar">隐藏状态栏</string>
+        <string name="summary_expanded_hide_scrollbar">电源控制插件设置为最多时隐藏状态栏</string>
 </resources>
