@@ -39,12 +39,15 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
     private static final String UI_EXP_WIDGET_PICKER = "widget_picker";
 
     private static final String UI_EXP_WIDGET_ORDER = "widget_order";
+    private static final String UI_EXP_WIDGET_BUTTOM = "widget_buttom";
 
     private CheckBoxPreference mPowerWidget;
 
     private CheckBoxPreference mPowerWidgetHideOnChange;
 
     private CheckBoxPreference mPowerWidgetHideScrollBar;
+
+    private CheckBoxPreference mPowerWidgetButtom;
 
     private Preference mPowerWidgetColor;
 
@@ -67,6 +70,7 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
                 .findPreference(UI_EXP_WIDGET_HIDE_ONCHANGE);
         mPowerWidgetHideScrollBar = (CheckBoxPreference) prefSet
                 .findPreference(UI_EXP_WIDGET_HIDE_SCROLLBAR);
+        mPowerWidgetButtom = (CheckBoxPreference) prefSet.findPreference(UI_EXP_WIDGET_BUTTOM);
 
         mPowerWidgetColor = prefSet.findPreference(UI_EXP_WIDGET_COLOR);
         mPowerPicker = (PreferenceScreen) prefSet.findPreference(UI_EXP_WIDGET_PICKER);
@@ -78,6 +82,9 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
                 Settings.System.EXPANDED_HIDE_ONCHANGE, 0) == 1));
         mPowerWidgetHideScrollBar.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_HIDE_SCROLLBAR, 0) == 1));
+
+        mPowerWidgetButtom.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_VIEW_WIDGET_BOTTOM, 1) == 1));
 
     }
 
@@ -107,6 +114,12 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
         if (preference == mPowerWidgetHideScrollBar) {
             value = mPowerWidgetHideScrollBar.isChecked();
             Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_HIDE_SCROLLBAR,
+                    value ? 1 : 0);
+        }
+
+        if (preference == mPowerWidgetButtom) {
+            value = mPowerWidgetButtom.isChecked();
+            Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_VIEW_WIDGET_BOTTOM,
                     value ? 1 : 0);
         }
 
