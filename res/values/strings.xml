@@ -90,6 +90,8 @@
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">Status bar tweaks</string>
+    <string name="ui_status_bar_am_pm_title">AM/PM style</string>
+    <string name="ui_status_bar_am_pm_summary">Display style of AM/PM next to clock</string>
     <string name="ui_status_bar_clock_title">Show clock</string>
     <string name="ui_status_bar_clock_summary">Status bar clock will be hidden, if disabled</string>
     <string name="ui_status_bar_cm_battery_title">Battery percentage</string>
@@ -218,6 +220,8 @@
     <string name="lockscreen_delay_header">Delay and timeout</string>
     <string name="pref_lockscreen_style_title">Lockscreen style</string>
     <string name="pref_lockscreen_style_summary">Choose the style of the lockscreen</string>
+    <string name="pref_in_call_style_title">Incoming call style</string>
+    <string name="pref_in_call_style_summary">Choose the style of the incoming calls accept/reject widget</string>
     <string name="pref_volbtn_music_controls_title">Volume button music controls</string>
     <string name="pref_volbtn_music_controls_summary">Seek music tracks when long-pressing the volume buttons while screen off</string>
     <string name="pref_cambtn_music_controls_title">Camera button music control</string>
