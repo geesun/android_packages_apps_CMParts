@@ -26,6 +26,8 @@
     <string name="system_settings_title_head">系统设置</string>
     <string name="system_settings_title_subhead">系统设置</string>
     <string name="system_settings_summary_head">查看CM更新日志</string>
+    <string name="permissions_settings_title_head">权限管理</string>
+    <string name="permissions_settings_title_subhead">应用程序权限管理设置</string>
     <string name="buttons_title">按钮设置</string>
     <!-- Generic -->
     <string name="app_name">高级设置</string>
@@ -680,4 +682,11 @@
     <string name="ui_status_bar_compact_carrier_summary">拉下通知栏时使用较小的运营商标签</string>
     <string name="title_expanded_hide_scrollbar">隐藏状态栏</string>
         <string name="summary_expanded_hide_scrollbar">电源控制插件设置为最多时隐藏状态栏</string>
+
+    <!-- Permissions Managment Settings strings -->
+    <string name="perm_enable_managment">权限管理</string>
+    <string name="perm_enable_managment_summary">开启权限管理</string>
+    <string name="perm_enable_warning_message">警告!\n禁用应用程序权限可能会导致程序功能不可用。\n如果警用权限导致程序强制退出，请给应用程序开放权限或者放弃用这个应用程序。</string>
+    <string name="perm_enable_warning_title">你确定么?</string>
+
 </resources>
