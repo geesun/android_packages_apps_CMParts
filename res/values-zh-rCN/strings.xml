@@ -17,6 +17,9 @@
     <string name="lockscreen_settings_title_head">锁屏设置</string>
     <string name="lockscreen_settings_title_subhead">锁屏设置</string>
     <string name="lockscreen_settings_summary_head">锁屏手势，锁屏方式，解锁选项</string>
+    <string name="pref_in_call_style_title">呼入时接听方式</string>
+    <string name="pref_in_call_style_summary">选择呼入时接听/拒听方式</string>
+
     <string name="performance_settings_title_head">性能设置</string>
     <string name="performance_settings_title_subhead">性能设置</string>
     <string name="performance_settings_summary_head">性能优化, JIT, 虚拟机内存</string>
@@ -657,6 +660,8 @@
     <string name="ui_status_bar_title">状态栏优化</string>
     <string name="ui_status_bar_clock_title">显示时钟</string>
     <string name="ui_status_bar_clock_summary">隐藏状态栏时钟</string>
+    <string name="ui_status_bar_am_pm_title">AM/PM风格</string>
+    <string name="ui_status_bar_am_pm_summary">在时间后面显示AM/PM</string>
     <string name="ui_status_bar_cm_battery_title">电池百分比</string>
     <string name="ui_status_bar_cm_battery_summary">显示迷你百分比电池图片.如果选择主题后电池不美观，请取消显示电池百分比</string>
 
@@ -686,7 +691,7 @@
     <!-- Permissions Managment Settings strings -->
     <string name="perm_enable_managment">权限管理</string>
     <string name="perm_enable_managment_summary">开启权限管理</string>
-    <string name="perm_enable_warning_message">警告!\n禁用应用程序权限可能会导致程序功能不可用。\n如果警用权限导致程序强制退出，请给应用程序开放权限或者放弃用这个应用程序。</string>
+    <string name="perm_enable_warning_message">警告!禁止程序权限会造成程序运行出错. \n如果该程序的权限被取消后出错,请恢复已取消的权限或不再使用该程序.\n 如果在禁止权限时所造成的程序出错请不要发送错误报告给cyanogenmod团队.</string>
     <string name="perm_enable_warning_title">你确定么?</string>
 
 </resources>
