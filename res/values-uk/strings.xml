@@ -502,4 +502,8 @@
   <string name="cpu_max_freq_summary">Максимальна частота процесора\nПоточна: %s</string>
   <string name="cpu_set_on_boot">Уст. під час завантаж.</string>
   <string name="cpu_set_on_boot_summary">Установлення налаштувань процесора під час завантаження</string>
+  <string name="perm_enable_management">Керування дозволами</string>
+  <string name="perm_enable_management_summary">Увімкнення керування дозволами програм</string>
+  <string name="perm_enable_warning_message">Увага!\nШвидше за все, скасування більшої частини дозволів спричинить помилки у роботі програм. Якщо програма зі скасованими дозволами несподівано закривається, надайте скасовані дозволи або відмовтесь від її використання.\nБудь ласка, НЕ НАДСИЛАЙТЕ Cyanogenmod звіт про помилку, якщо програма зі скасованими дозволами не працює як очікувалося!</string>
+  <string name="perm_enable_warning_title">Ви впевнені?</string>
 </resources>
