@@ -162,6 +162,8 @@
     <string name="pref_trackball_wake_summary">按下轨迹球可唤醒设备</string>
     <string name="pref_trackball_unlock_title">轨迹球解锁</string>
     <string name="pref_trackball_unlock_summary">按下轨迹球可解锁设备</string>
+    <string name="pref_volume_wake_title">声音按键唤醒设备</string>
+    <string name="pref_volume_wake_summary">按下声音大小键可唤醒设备. 方便那些很难按电源键的设备.</string>
     <string name="pref_menu_unlock_title">菜单键解锁</string>
     <string name="pref_menu_unlock_summary">按下菜单键可解锁设备</string>
     <string name="pref_lockscreen_quick_unlock_control_title">快速解锁</string>
