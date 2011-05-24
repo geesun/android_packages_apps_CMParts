@@ -691,8 +691,8 @@
         <string name="summary_expanded_hide_scrollbar">电源控制插件设置为最多时隐藏状态栏</string>
 
     <!-- Permissions Managment Settings strings -->
-    <string name="perm_enable_managment">权限管理</string>
-    <string name="perm_enable_managment_summary">开启权限管理</string>
+    <string name="perm_enable_management">权限管理</string>
+    <string name="perm_enable_management_summary">开启权限管理</string>
     <string name="perm_enable_warning_message">警告!禁止程序权限会造成程序运行出错. \n如果该程序的权限被取消后出错,请恢复已取消的权限或不再使用该程序.\n 如果在禁止权限时所造成的程序出错请不要发送错误报告给cyanogenmod团队.</string>
     <string name="perm_enable_warning_title">你确定么?</string>
 
