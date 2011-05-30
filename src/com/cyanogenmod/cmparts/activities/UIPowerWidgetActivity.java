@@ -32,6 +32,8 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
 
     private static final String UI_EXP_WIDGET_HIDE_ONCHANGE = "expanded_hide_onchange";
 
+    private static final String UI_EXP_WIDGET_HIDE_INDICATOR = "expanded_hide_indicator";
+
     private static final String UI_EXP_WIDGET_HIDE_SCROLLBAR = "expanded_hide_scrollbar";
 
     private static final String UI_EXP_WIDGET_COLOR = "expanded_color_mask";
@@ -44,6 +46,8 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
     private CheckBoxPreference mPowerWidget;
 
     private CheckBoxPreference mPowerWidgetHideOnChange;
+
+    private CheckBoxPreference mPowerWidgetIndicatorHide;
 
     private CheckBoxPreference mPowerWidgetHideScrollBar;
 
@@ -71,7 +75,8 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
         mPowerWidgetHideScrollBar = (CheckBoxPreference) prefSet
                 .findPreference(UI_EXP_WIDGET_HIDE_SCROLLBAR);
         mPowerWidgetButtom = (CheckBoxPreference) prefSet.findPreference(UI_EXP_WIDGET_BUTTOM);
-
+        mPowerWidgetIndicatorHide = (CheckBoxPreference) prefSet
+                .findPreference(UI_EXP_WIDGET_HIDE_INDICATOR);
         mPowerWidgetColor = prefSet.findPreference(UI_EXP_WIDGET_COLOR);
         mPowerPicker = (PreferenceScreen) prefSet.findPreference(UI_EXP_WIDGET_PICKER);
         mPowerOrder = (PreferenceScreen) prefSet.findPreference(UI_EXP_WIDGET_ORDER);
@@ -86,6 +91,8 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
         mPowerWidgetButtom.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.EXPANDED_VIEW_WIDGET_BOTTOM, 1) == 1));
 
+        mPowerWidgetIndicatorHide.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.EXPANDED_HIDE_INDICATOR, 0) == 1));
     }
 
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
@@ -120,6 +127,11 @@ public class UIPowerWidgetActivity extends PreferenceActivity {
         if (preference == mPowerWidgetButtom) {
             value = mPowerWidgetButtom.isChecked();
             Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_VIEW_WIDGET_BOTTOM,
+                    value ? 1 : 0);
+        }
+        if (preference == mPowerWidgetIndicatorHide) {
+            value = mPowerWidgetIndicatorHide.isChecked();
+            Settings.System.putInt(getContentResolver(), Settings.System.EXPANDED_HIDE_INDICATOR,
                     value ? 1 : 0);
         }
 
