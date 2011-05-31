@@ -248,4 +248,11 @@
         <item>增强彩虹桥</item>
     </string-array>
 
+
+    <string-array name="pref_lockscreen_gesture_action_entries">
+        <item>手机解锁</item>
+        <item>切换声音</item>
+        <item>操作捷径</item>
+        <item>手电筒</item>
+    </string-array>
 </resources>
