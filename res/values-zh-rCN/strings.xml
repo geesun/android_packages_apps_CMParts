@@ -433,7 +433,6 @@
     <string name="gestures_unlock_only">电话解锁</string>
     <string name="gestures_toggle_sound">切换声音</string>
     <string name="gestures_button_done">完成</string>
-    <string name="gestures_shortcut_picker_button_label">为这个手势选择一个快捷方式或活动</string>
     <string name="gestures_error_missing_shortcut">您必需为这个手势选择一个动作！</string>
     <string name="gestures_save_success">手势保存到 %s</string>
     <string name="gestures_cancel_action">取消</string>
@@ -488,6 +487,7 @@
 
     <string name="pref_rotate_180_title">180度旋转</string>
     <string name="pref_rotate_180_summary">允许手机180度旋转</string>
+    <string name="gestures_flashlight">手电筒</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">查看更新日志</string>
