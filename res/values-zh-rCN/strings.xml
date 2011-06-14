@@ -78,6 +78,12 @@
     <string name="tablet_soft_buttons_search_title">搜索键</string>
     <string name="tablet_soft_buttons_quick_na_title">快捷通知键</string>
 
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">重力旋转</string>
+    <string name="pref_rotation_90_title">90度</string>
+    <string name="pref_rotation_180_title">180度</string>
+    <string name="pref_rotation_270_title">270度</string>
+
     <!-- User interface -->
     <string name="ui_title">用户界面</string>
     <string name="ui_summary">用户界面设置与微调</string>
