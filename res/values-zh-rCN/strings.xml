@@ -704,6 +704,7 @@
     <string name="ui_status_bar_compact_carrier_summary">拉下通知栏时使用较小的运营商标签</string>
     <string name="ui_status_bar_toggle_brightness">状态栏亮度控制</string>
     <string name="ui_status_bar_toggle_brightness_summary">允许划动状态栏切换屏幕亮度</string>
+<string name="ui_status_bar_toggle_info">自动调节亮度已开启</string>
     <string name="title_expanded_hide_scrollbar">隐藏状态栏</string>
         <string name="summary_expanded_hide_scrollbar">电源控制插件设置为最多时隐藏状态栏</string>
 
