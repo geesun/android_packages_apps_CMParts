@@ -329,7 +329,7 @@
     <string name="pref_ring_mode_title">Modos de som</string>
     <string name="pref_ring_mode_summary">Escolha como o botão de som alterna o modo</string>
     <string name="pref_flash_mode_title">Modo de Flash</string>
-    <string name="pref_flash_mode_summary">Escolha Alto / Raio da Morte (Evo)</string>
+    <string name="pref_flash_mode_summary">Escolha Alto / Raio da Morte</string>
 
 
     <!-- Performance : Lock home memory -->
@@ -610,4 +610,10 @@
     <string name="pref_rotation_90_title">90 graus</string>
     <string name="pref_rotation_180_title">180 graus</string>
     <string name="pref_rotation_270_title">270 graus</string>
+    <string name="pref_rotation_0_title">0 grau</string>
+    <string name="long_press_menu_title">Configurações de pressionar continuamente o menu</string>
+    <string name="long_press_menu_summary">Personalizar as configurações para pressionar continuamente o menu</string>
+    <string name="pref_user_defined_long_press_menu_title">Selecionar aplicação personalizada</string>
+    <string name="pref_long_press_menu_title">Selecionar o comportamento</string>
+    <string name="pref_long_press_menu_summary">Personalizar pressionar continuamente o menu</string>
 </resources>

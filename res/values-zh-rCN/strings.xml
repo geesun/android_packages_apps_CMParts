@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"> 
 
     <!--  Primary Screen Settings -->
     <string name="application_settings_title_head">应用设置</string>
@@ -166,6 +166,8 @@
     <string name="pref_lockscreen_always_music_controls_summary">无论是否正在播放音乐，总是显示音乐播放控制按钮</string>
 	<string name="pref_trackball_wake_title">轨迹球唤醒</string>
     <string name="pref_trackball_wake_summary">按下轨迹球可唤醒设备</string>
+    <string name="pref_volume_wake_title">音量键唤醒</string>
+    <string name="pref_volume_wake_summary">按一下增加／减小音量键来唤醒设备。用于不方便按电源键的设备</string>
     <string name="pref_trackball_unlock_title">轨迹球解锁</string>
     <string name="pref_trackball_unlock_summary">按下轨迹球可解锁设备</string>
     <string name="pref_volume_wake_title">声音按键唤醒设备</string>
@@ -175,7 +177,13 @@
     <string name="pref_lockscreen_quick_unlock_control_title">快速解锁</string>
     <string name="pref_lockscreen_quick_unlock_control_summary">输入数字 PIN 或密码后无需按确定按钮即可解锁，按删除键重新输入。</string>
 
-	
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">长按菜单键设置</string>
+    <string name="long_press_menu_summary">自定义长按菜单键</string>
+    <string name="pref_user_defined_long_press_menu_title">选择自定义应用程序</string>
+    <string name="pref_long_press_menu_title">选择行为</string>
+    <string name="pref_long_press_menu_summary">自定义长按菜单键</string>
+
     <!-- Long Press Home -->
     <string name="long_press_home_title">长按Home键设置</string>
     <string name="long_press_home_summary">调整最近打开程序显示数量等设置</string>
@@ -494,6 +502,7 @@
     <string name="pref_rotate_180_title">180度旋转</string>
     <string name="pref_rotate_180_summary">允许手机180度旋转</string>
     <string name="gestures_flashlight">手电筒</string>
+    <string name="gestures_shortcut_or_activity">快捷方式或动作</string>
 
     <!-- Change Log strings -->
     <string name="changelog_title">查看更新日志</string>

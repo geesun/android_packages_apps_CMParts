@@ -85,7 +85,12 @@
     <string name="tablet_soft_buttons_search_title">検索</string>
     <string name="tablet_soft_buttons_quick_na_title">クイック通知</string>
 
-    <!-- User interface : 180 degree rotation -->
+    <!-- User interface : Rotation -->
+    <string name="rotation_category_title">加速度センサによる回転</string>
+    <string name="pref_rotation_0_title">0度</string>
+    <string name="pref_rotation_90_title">90度</string>
+    <string name="pref_rotation_180_title">180度</string>
+    <string name="pref_rotation_270_title">270度</string>
 
     <!-- User interface: Status bar tweaks -->
     <string name="ui_status_bar_title">ステータスバー</string>
@@ -99,6 +104,8 @@
     <string name="ui_status_bar_compact_carrier_summary">小さなキャリアラベルを用いた代替のドロップダウンレイアウトを使用する</string>
     <string name="ui_status_bar_toggle_brightness">明るさのコントロール</string>
     <string name="ui_status_bar_toggle_brightness_summary">ステータスバーをスライディングすることで明るさの調整ができるようにする</string>
+    <string name="ui_status_bar_toggle_info">自動明るさ調整は有効</string>
+
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED通知</string>
@@ -235,6 +242,13 @@
     <string name="pref_volbtn_music_controls_summary">スクリーンオフの時、音量ボタンを長押しすることで曲のシークを行う</string>
     <string name="pref_cambtn_music_controls_title">カメラボタンによるミュージックコントロール</string>
     <string name="pref_cambtn_music_controls_summary">スクリーンオフの時、カメラボタンを長押しすることで曲の再生と停止を切り替える</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">メニュー長押し設定</string>
+    <string name="long_press_menu_summary">メニューボタンを長押ししたときのカスタマイズ</string>
+    <string name="pref_user_defined_long_press_menu_title">カスタムアプリの選択</string>
+    <string name="pref_long_press_menu_title">挙動の選択</string>
+    <string name="pref_long_press_menu_summary">メニューボタン長押しの設定</string>
 
     <!-- Long Press Home -->
     <string name="long_press_home_title">ホーム長押し設定</string>
@@ -406,7 +420,7 @@
     <string name="pref_ring_mode_title">サウンド</string>
     <string name="pref_ring_mode_summary">サウンドトグルで変更するモードの選択</string>
     <string name="pref_flash_mode_title">フラッシュ</string>
-    <string name="pref_flash_mode_summary">HighかDeath Ray(Evo)を選択</string>
+    <string name="pref_flash_mode_summary">HighかDeath Rayを選択</string>
 
     <!-- Performance : Lock home memory -->
     <string name="pref_lock_home_title">ホームをメモリに維持</string>
