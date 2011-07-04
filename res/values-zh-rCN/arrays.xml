@@ -29,29 +29,10 @@
         <item>SD 卡</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
-        <item>无渲染效果</item>
-        <item>夜间模式 (红色)</item>
-        <item>终端模式 (绿色)</item>
-        <item>蓝色</item>
-        <item>琥珀</item>
-        <item>三文鱼色 (粉红)</item>
-        <item>金钟花色 (紫红)</item>
-        <item>优化颜色 (N1)</item>
-        <item>优化颜色 (N1) 减少红色</item>
-        <item>优化颜色 (N1) 冷色</item>
-    </string-array>
-
-    <string-array name="render_entries">
-        <item>夜间模式 (红色)</item>
-        <item>终端模式 (绿色)</item>
-        <item>蓝色</item>
-        <item>琥珀</item>
-        <item>三文鱼色 (粉红)</item>
-        <item>金钟花色 (紫红)</item>
-        <item>优化颜色 (N1)</item>
-        <item>优化颜色 (N1) 减少红色</item>
-        <item>优化颜色 (N1) 冷色</item>
+    <string-array name="entries_status_bar_am_pm">
+        <item>正常</item>
+        <item>小</item>
+        <item>无 (默认)</item>
     </string-array>
 
     <string-array name="entries_trackball_colors">
@@ -106,6 +87,11 @@
         <item>彩虹桥解锁</item>
         <item>增强彩虹桥</item>
         <item>下拉式解锁</item>
+    </string-array>
+    <string-array name="entries_dual_led_colors">
+        <item>绿色</item>
+        <item>琥珀</item>
+        <item>无</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
@@ -237,11 +223,6 @@
         <item>加大声音</item>
         <item>减弱声音</item>
     </string-array>
-    <string-array name="entries_status_bar_am_pm">
-        <item>正常</item>
-        <item>小</item>
-        <item>无(默认)</item>
-    </string-array>
     <string-array name="pref_in_call_style_entries">
         <item>滑动条</item>
         <item>彩虹桥</item>
@@ -254,5 +235,50 @@
         <item>切换声音</item>
         <item>操作捷径</item>
         <item>手电筒</item>
+    </string-array>
+   <string-array name="entries_brightness_widget" formatted="false">
+        <item>自动 / 最暗 /40%/100%</item>
+        <item>自动 / 最暗 /25%/50%/75%/100%</item>
+        <item>自动 / 25%/100%</item>
+        <item>自动 / 100%</item>
+    </string-array>
+
+    <string-array name="entries_network_widget">
+        <item>2G / 3G+2G</item>  
+        <item>仅 2G / 3G</item>   
+        <item>仅 2G/3G / 3G+2G</item>
+    </string-array>
+
+    <string-array name="entries_screentimeout_widget">
+        <item>15秒 / 1分钟 / 5分钟</item>
+        <item>30秒 /2分钟 /5分钟 </item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>正常</item>
+        <item>强光 / 死光</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_gestures_sensitivity_entries">
+        <item>1 (最宽松)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12 (最严格)</item>
+    </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>无</item>
+        <item>软键盘</item>
+        <item>搜索键</item>
+        <item>自定义程序</item>
+        <item>显示 / 隐藏通知列</item>
     </string-array>
 </resources>
