@@ -55,7 +55,19 @@
         <item>2</item>
     </string-array>
 
-    <string-array name="entries_render_effect">
+     <string-array name="entries_status_bar_signal" translatable="false">
+        <item>@string/ui_status_bar_cm_signal_text_show_bars</item>
+        <item>@string/ui_status_bar_cm_signal_text_show_text</item>
+        <item>@string/ui_status_bar_cm_signal_text_show_text_dbm</item>
+     </string-array>
+
+     <string-array name="values_status_bar_signal" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="entries_render_effect" translatable="false">
         <item>@string/pref_render_effect_none</item>
         <item>@string/pref_render_effect_night</item>
         <item>@string/pref_render_effect_green</item>
@@ -83,7 +95,7 @@
         <item>10</item>
     </string-array>
 
-    <string-array name="render_entries">
+    <string-array name="render_entries" translatable="false">
         <item>@string/pref_render_effect_night</item>
         <item>@string/pref_render_effect_green</item>
         <item>@string/pref_render_effect_blue</item>
@@ -109,19 +121,31 @@
         <item>10</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Green</item>
-        <item>White</item>
-        <item>Red</item>
-        <item>Blue</item>
-        <item>Yellow</item>
-        <item>Cyan</item>
-        <item>Magenta</item>
-        <item>Pink</item>
-        <item>Orange</item>
-        <item>Light Blue</item>
-        <item>Random</item>
-        <item>None</item>
+    <string-array name="haptic_feedback_entries">
+        <item>Global Settings</item>
+        <item>On</item>
+        <item>Off</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_values" translatable="false">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="entries_trackball_colors" translatable="false">
+        <item>@string/trackball_color_entry_green</item>
+        <item>@string/trackball_color_entry_white</item>
+        <item>@string/trackball_color_entry_red</item>
+        <item>@string/trackball_color_entry_blue</item>
+        <item>@string/trackball_color_entry_yellow</item>
+        <item>@string/trackball_color_entry_cyan</item>
+        <item>@string/trackball_color_entry_magenta</item>
+        <item>@string/trackball_color_entry_pink</item>
+        <item>@string/trackball_color_entry_orange</item>
+        <item>@string/trackball_color_entry_light_blue</item>
+        <item>@string/trackball_color_entry_random</item>
+        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="pref_trackball_colors_values" translatable="false">
@@ -139,15 +163,29 @@
         <item>none</item>
     </string-array>
 
-    <string-array name="entries_dual_led_colors">
-        <item>Green</item>
-        <item>Amber</item>
-        <item>None</item>
+    <string-array name="entries_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_green</item>
+        <item>@string/trackball_color_entry_amber</item>
+        <item>@string/trackball_color_entry_none</item>
     </string-array>
 
     <string-array name="values_dual_led_colors" translatable="false">
         <item>green</item>
         <item>red</item>
+        <item>none</item>
+    </string-array>
+
+    <string-array name="entries_mixable_dual_led_colors" translatable="false">
+        <item>@string/trackball_color_entry_green</item>
+        <item>@string/trackball_color_entry_red</item>
+        <item>@string/trackball_color_entry_amber</item>
+        <item>@string/trackball_color_entry_none</item>
+    </string-array>
+
+    <string-array name="values_mixable_dual_led_colors" translatable="false">
+        <item>green</item>
+        <item>red</item>
+        <item>yellow</item>
         <item>none</item>
     </string-array>
 
@@ -395,13 +433,14 @@
         <item>1</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Sound+Vibrate/Vibrate</item>
-        <item>Sound/Vibrate</item>
-        <item>Sound/Silent</item>
-        <item>Sound+Vib/Vib/Silent</item>
-        <item>Sound/Vibrate/Silent</item>
-        <item>Sound+Vibrate/Sound/Vibrate/Silent</item>
+    <string-array name="entries_ring_widget" translatable="false">
+        <item>@string/cm_sound_mode_soundVib_vib</item>
+        <item>@string/cm_sound_mode_sound_vib</item>
+        <item>@string/cm_sound_mode_sound_silent</item>
+        <item>@string/cm_sound_mode_soundVib_vib_silent</item>
+        <item>@string/cm_sound_mode_sound_vib_silent</item>
+        <item>@string/cm_sound_mode_soundVib_sound_vib_silent</item>
+        <item>@string/cm_sound_mode_vib_silent</item>
     </string-array>
 
     <string-array name="values_ring_widget" translatable="false">
@@ -411,6 +450,7 @@
         <item>3</item>
         <item>4</item>
         <item>5</item>
+        <item>6</item>
     </string-array>
 
     <string-array name="entries_flash_widget">
@@ -484,6 +524,18 @@
         <item>1</item>
         <item>2</item>
         <item>3</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Color fill</item>
+        <item>Custom image</item>
+        <item>Default wallpaper</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -612,7 +664,7 @@
         <item>Toggle statusbar</item>
     </string-array>
 
-    <string-array name="values_long_press_menu">
+    <string-array name="values_long_press_menu" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>

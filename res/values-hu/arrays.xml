@@ -28,27 +28,6 @@
         <item>Külső (SD)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Zöld</item>
-        <item>Fehér</item>
-        <item>Piros</item>
-        <item>kék</item>
-        <item>Sárga</item>
-        <item>Cián</item>
-        <item>Bíborvörös</item>
-        <item>Rózsaszín</item>
-        <item>Narancs</item>
-        <item>Világoskék</item>
-        <item>Véletlenszerű</item>
-        <item>Nincs</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Zöld</item>
-        <item>Borostyán</item>
-        <item>Nincs</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Gyors)</item>
         <item>3</item>
@@ -169,15 +148,6 @@
     <string-array name="entries_screentimeout_widget">
         <item>15s/1m/5m</item>
         <item>30s/2m/5m</item>
-    </string-array>
-
-    <string-array name="entries_ring_widget">
-        <item>Hang+Rezgés/Rezgés</item>
-        <item>Hang/Rezgés</item>
-        <item>Hang/Csendes</item>
-        <item>Hang+Vib/Vib/Csendes</item>
-        <item>Hang/Rezgés/Csendes</item>
-        <item>Hang+Rezgés/Hang/Rezgés/Csendes</item>
     </string-array>
 
     <string-array name="entries_flash_widget">

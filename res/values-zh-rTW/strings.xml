@@ -105,6 +105,11 @@
     <string name="ui_status_bar_toggle_brightness">通知列控制亮度</string>
     <string name="ui_status_bar_toggle_brightness_summary">允許在通知列上滑動來調整亮度</string>
     <string name="ui_status_bar_toggle_info">自動亮度已啟用</string>
+    <string name="ui_status_bar_cm_signal_text_title">替代的信號顯示</string>
+    <string name="ui_status_bar_cm_signal_text_summary">顯示信號的 dBm 數值或條狀圖示</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">信號條狀圖示</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">信號文字</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">信號文字、dBm</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED 通知</string>
@@ -125,10 +130,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">螢幕鎖定設定</string>
     <string name="pref_lockscreen_delay_title">延遲</string>
-    <string name="pref_lockscreen_timeout_lock_delay">螢幕逾時延遲</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">螢幕關閉延遲</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">螢幕逾時後延遲多久才鎖定螢幕</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">螢幕關閉後延遲多久才鎖定螢幕</string>
+    <string name="pref_lockscreen_security_title">安全性鎖定</string>
+    <string name="pref_lockscreen_security_delay_note_title">注意</string>
+    <string name="pref_lockscreen_security_delay_note_summary">當螢幕鎖定安全性設定為“無”時，被使用的將會是這一組延遲時間</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">螢幕逾時延遲</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">螢幕關閉延遲</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">螢幕逾時後延遲多久才啟用安全性鎖定螢幕</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">螢幕關閉後延遲多久才啟用安全性鎖定螢幕</string>
+    <string name="pref_lockscreen_slide_title">滑動式鎖定</string>
+    <string name="pref_lockscreen_slide_delay_note_title">注意</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">即使這啟用了，安全性鎖定延遲的時間亦必須比滑動式鎖定延遲的時間長，滑動式鎖定螢幕才會被顯示出來</string>
+    <string name="pref_lockscreen_slide_delay_title">啟用滑動式鎖定延遲</string>
+    <string name="pref_lockscreen_slide_delay_summary">以另外的延遲時間顯示滑動式鎖定螢幕，然後才顯示安全性鎖定螢幕</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">螢幕逾時延遲</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">螢幕關閉延遲</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">螢幕逾時後延遲多久才啟用滑動式鎖定螢幕</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">螢幕關閉後延遲多久才啟用滑動式鎖定螢幕</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">挑選顏色</string>
@@ -176,11 +193,28 @@
     <string name="trackball_color_notice_title">注意</string>
     <string name="trackball_color_notice_summary">並非每一款裝置都能夠顯示全部每一種色彩</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">綠</string>
+    <string name="trackball_color_entry_white">白</string>
+    <string name="trackball_color_entry_red">紅</string>
+    <string name="trackball_color_entry_blue">藍</string>
+    <string name="trackball_color_entry_yellow">黄</string>
+    <string name="trackball_color_entry_cyan">青</string>
+    <string name="trackball_color_entry_magenta">洋紅</string>
+    <string name="trackball_color_entry_pink">粉紅</string>
+    <string name="trackball_color_entry_orange">橙</string>
+    <string name="trackball_color_entry_light_blue">淺藍</string>
+    <string name="trackball_color_entry_random">隨機</string>
+    <string name="trackball_color_entry_none">無</string>
+    <string name="trackball_color_entry_amber">琥珀</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">警告：會引致加速耗電</string>
     <string name="notification_battery_warning">這個選項已被證實會增加每小時3％的耗電量。如發現啟用了閃爍後耗電速度增快，那麼這個選項就是原因。如不希望招致耗電加快就請勿啟用。</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">只顯示解鎖螢幕</string>
+    <string name="pref_lockscreen_disable_on_security_summary">當螢幕安全性（圖形、PIN、密碼）為啟用時不顯示鎖定螢幕，直接顯示解鎖輸入介面</string>
     <string name="pref_lockscreen_stylecfg_title">風格選項</string>
     <string name="pref_lockscreen_stylecfg_summary">鎖定螢幕風格及其相關設定</string>
     <string name="pref_lockscreen_widgets_title">小工具選項</string>
@@ -219,8 +253,16 @@
     <string name="pref_lockscreen_custom_app_toggle_title">啟動自訂應用程式</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">在滑桿模式中以額外的滑桿，或在撥輪模式中以額外的撥孔，來啟動自訂應用程式。</string>
     <string name="pref_lockscreen_custom_app_activity_title">自訂應用程式</string>
-    <string name="pref_lockscreen_custom_icon_style_title">使用簡訊圖示</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">以簡訊圖示代替 CyanogenMod 圖示來啟動自訂應用程式</string>
+    <string name="pref_lockscreen_custom_background_title">背境</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">選擇背境</string>
+    <string name="pref_lockscreen_custom_background_summary">選擇自訂桌布，或以單一色彩填滿鎖定螢幕背境</string>
+    <string name="pref_lockscreen_custom_background_summary_color">目前：填滿色彩</string>
+    <string name="pref_lockscreen_custom_background_summary_image">目前：自訂桌布</string>
+    <string name="pref_lockscreen_custom_background_summary_default">目前：預設背境</string>
+    <string name="pref_lockscreen_background_result_successful">背境已變更。</string>
+    <string name="pref_lockscreen_background_result_not_successful">未更改背境。</string>
+    <string name="pref_lockscreen_custom_icon_style_title">使用應用程式圖示</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">以應用程式圖示代替 CyanogenMod 圖示來啟動自訂應用程式</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">拉下解鎖</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">向下拉動撥輪來解鎖，向右撥動來啟動自訂應用程式。</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">隱藏撥輪箭頭</string>
@@ -376,6 +418,10 @@
     <string name="pref_render_effect_title">渲染效果</string>
     <string name="pref_render_effect_summary">變更描繪螢幕的顏色（很可能會節省電力）</string>
 
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">觸動回饋</string>
+    <string name="expanded_haptic_feedback_summary">啟用／停用觸動回饋</string>
+
     <string name="widget_name">渲染效果小工具</string>
     <string name="renderfx_temp">渲染效果</string>
     <string name="prefs_render_effect">渲染效果</string>
@@ -393,7 +439,6 @@
     <string name="pref_render_effect_calibrated_cool">校準的（N1）冷酷</string>
     <string name="pref_render_effect_red">紅</string>
 
-
     <!--  Widget Types -->
     <string name="widget_render_effect_night">夜視</string>
     <string name="widget_render_effect_terminal">終端機</string>
@@ -405,7 +450,6 @@
     <string name="widget_render_effect_calibrated">校準的</string>
     <string name="widget_render_effect_calibrated_red">校準的 低紅</string>
     <string name="widget_render_effect_calibrated_cool">校準的 冷酷</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">擴充檢視小工具</string>
@@ -451,6 +495,13 @@
     <string name="pref_screentimeout_mode_summary">選擇螢幕逾時按鈕如何切換模式</string>
     <string name="pref_ring_mode_title">音效模式</string>
     <string name="pref_ring_mode_summary">選擇音效按鈕如何切換模式</string>
+    <string name="cm_sound_mode_soundVib_vib">聲音＋震動／僅震動</string>
+    <string name="cm_sound_mode_sound_vib">僅聲音／僅震動</string>
+    <string name="cm_sound_mode_sound_silent">僅聲音／靜音</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">聲音＋震動／僅震動／靜音</string>
+    <string name="cm_sound_mode_sound_vib_silent">僅聲音／僅震動／靜音</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">聲音＋震動／僅聲音／僅震動／靜音</string>
+    <string name="cm_sound_mode_vib_silent">僅震動／靜音</string>
     <string name="pref_flash_mode_title">手電筒模式</string>
     <string name="pref_flash_mode_summary">選擇強／死光</string>
 
@@ -650,5 +701,7 @@
     <string name="perm_enable_management_summary">啟用應用程式權限管理</string>
     <string name="perm_enable_warning_message">警告！\n大多數權限若被撤消的話就很可能會導致應用程式無法運作。如有撤消了權限的應用程式強制關閉，請授予其要求的權限，或停止使用該應用程式。\n如撤消了權限的應用程式沒有預期地運作，敬請不要回報相關錯誤至 CyanogenMod！</string>
     <string name="perm_enable_warning_title">您確定嗎？</string>
+
+
 
 </resources>

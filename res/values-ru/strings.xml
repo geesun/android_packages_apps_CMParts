@@ -176,11 +176,28 @@
     <string name="trackball_color_notice_title">ПРИМЕЧАНИЕ:</string>
     <string name="trackball_color_notice_summary">На некоторых устройствах будут отображаться не все цвета</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Зелёный</string>
+    <string name="trackball_color_entry_white">Белый</string>
+    <string name="trackball_color_entry_red">Красный</string>
+    <string name="trackball_color_entry_blue">Синий</string>
+    <string name="trackball_color_entry_yellow">Жёлтый</string>
+    <string name="trackball_color_entry_cyan">Голубой</string>
+    <string name="trackball_color_entry_magenta">Фиолетовый</string>
+    <string name="trackball_color_entry_pink">Розовый</string>
+    <string name="trackball_color_entry_orange">Оранжевый</string>
+    <string name="trackball_color_entry_light_blue">Светло-синий</string>
+    <string name="trackball_color_entry_random">Случайно</string>
+    <string name="trackball_color_entry_none">Нет</string>
+    <string name="trackball_color_entry_amber">Жёлтый</string>
+
     <!--Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">Внимание: может вызвать разрядку батареи</string>
     <string name="notification_battery_warning">Эта настройка увеличивает разряд батареи примерно на 3% в час. Если вы заметили, что батарея разряжается быстрее, виновата эта опция. Не включайте, если не хотите быстрой разрядки.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Отключить экран блокировки при защите устройства</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Отключить экран блокировки, если включен экран защиты устройства (графический ключ, PIN, пароль)</string>
     <string name="pref_lockscreen_stylecfg_title">Стиль</string>
     <string name="pref_lockscreen_stylecfg_summary">Стиль экрана блокировки и соответствующие настройки</string>
     <string name="pref_lockscreen_widgets_title">Виджеты</string>
@@ -219,8 +236,11 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Запуск приложения пользователя</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Добавить второй ползунок (для стиля Ползунок) или приложение пользователя (для стиля Вращение)</string>
     <string name="pref_lockscreen_custom_app_activity_title">Выбрать приложение</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Иконка сообщения</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Использовать иконку сообщения вместо иконки CM для приложения пользователя</string>
+    <string name="pref_lockscreen_custom_background_title">Выбрать фон</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Выбрать фон</string>
+    <string name="pref_lockscreen_custom_background_summary">Выберите изображение или цвет в качестве фона экрана блокировки</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Иконка приложения</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Использовать иконку приложения вместо иконки CM для приложения пользователя</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Сдвинуть вниз для разблокировки</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Сдвиг вниз для разблокировки. Сдвиг вправо для запуска пользовательского приложения</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Скрыть стрелки</string>
@@ -374,6 +394,11 @@
     <!-- UI Settings : Render effect -->
     <string name="pref_render_effect_title">Эффекты экрана</string>
     <string name="pref_render_effect_summary">Позволяет изменять цвет прорисовки экрана (возможна экономия батареи)</string>
+
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Отклик на нажатие</string>
+    <string name="expanded_haptic_feedback_summary">Вкл/Выкл отклик на нажатие.</string>
+
     <string name="widget_name">Эффекты экрана</string>
     <string name="renderfx_temp">Эффект</string>
     <string name="prefs_render_effect">Эффект экрана</string>
@@ -449,6 +474,13 @@
     <string name="pref_screentimeout_mode_summary">Укажите, какие режимы отключения экрана будут меняться кнопкой \"Задержка выкл. экрана\"</string>
     <string name="pref_ring_mode_title">Режимы звука</string>
     <string name="pref_ring_mode_summary">Укажите, какие режимы будут меняться кнопкой \"Звук\"</string>
+    <string name="cm_sound_mode_soundVib_vib">Звук+Вибро/Вибро</string>
+    <string name="cm_sound_mode_sound_vib">Звук/Вибро</string>
+    <string name="cm_sound_mode_sound_silent">Звук/Беззвучный</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Звук+Вибро/Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_sound_vib_silent">Звук/Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Звук+Вибро/Звук/Вибро/Беззвучный</string>
+    <string name="cm_sound_mode_vib_silent">Вибро/Беззвучный</string>
     <string name="pref_flash_mode_title">Режимы фонарика</string>
     <string name="pref_flash_mode_summary">Яркий / Луч смерти</string>
 

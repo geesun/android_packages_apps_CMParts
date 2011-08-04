@@ -118,6 +118,21 @@
     <string name="trackball_color_notice_title">NOTA:</string>
     <string name="trackball_color_notice_summary">Nem todas as cores serão apresentadas em todos os aparelhos.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verde</string>
+    <string name="trackball_color_entry_white">Branco</string>
+    <string name="trackball_color_entry_red">Vermelho</string>
+    <string name="trackball_color_entry_blue">Azul</string>
+    <string name="trackball_color_entry_yellow">Amarelo</string>
+    <string name="trackball_color_entry_cyan">Azul-Piscina</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rosa</string>
+    <string name="trackball_color_entry_orange">Laranja</string>
+    <string name="trackball_color_entry_light_blue">Azul Claro</string>
+    <string name="trackball_color_entry_random">Aleatório</string>
+    <string name="trackball_color_entry_none">Nenhum</string>
+    <string name="trackball_color_entry_amber">Âmbar</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">AVISO: Pode causar aumento do consumo de bateria</string>
     <string name="notification_battery_warning">Esta opção aumentará o consumo de bateria em ~3% por hora. Se notar um aumento no consumo então a razão é esta opção. Não active se não quer aumentar o consumo.</string>
@@ -365,6 +380,13 @@
     <string name="pref_screentimeout_mode_summary">Escolher como o botão de tempo de ecrã altera o tempo de ecrã</string>
     <string name="pref_ring_mode_title">Modos de som</string>
     <string name="pref_ring_mode_summary">Escolher como o botão de som altera o som</string>
+    <string name="cm_sound_mode_soundVib_vib">Som+Vibrar/Vibrar</string>
+    <string name="cm_sound_mode_sound_vib">Som/Vibrar</string>
+    <string name="cm_sound_mode_sound_silent">Som/Silêncio</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Som+Vibrar/Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_sound_vib_silent">Som/Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Som+Vibrar/Som/Vibrar/Silêncio</string>
+    <string name="cm_sound_mode_vib_silent">Vibrar/Silêncio</string>
     <string name="pref_flash_mode_title">Modo flash</string>
     <string name="pref_flash_mode_summary">Escolher elevado/raio mortal</string>
 

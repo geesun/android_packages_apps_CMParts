@@ -43,21 +43,6 @@
     <item>Sehr schwach</item>
   </string-array>
 
-  <string-array name="entries_trackball_colors">
-    <item>Grün</item>
-    <item>Weiß</item>
-    <item>Rot</item>
-    <item>Blau</item>
-    <item>Gelb</item>
-    <item>Cyan</item>
-    <item>Magenta</item>
-    <item>Pink</item>
-    <item>Orange</item>
-    <item>Hellblau</item>
-    <item>Zufällig</item>
-    <item>Keine</item>
-  </string-array>
-
   <string-array name="pref_trackball_blink_rate_entries">
     <item>2 (Schnell)</item>
     <item>3</item>
@@ -180,15 +165,6 @@
     <item>30Sek/2Min/5Min</item>
   </string-array>
 
-  <string-array name="entries_ring_widget">
-    <item>Töne+Vibration/Vibration</item>
-    <item>Töne/Vibration</item>
-    <item>Töne/Lautlos</item>
-    <item>Töne+Vibration/Vibration/Lautlos</item>
-    <item>Töne/Vibration/Lautlos</item>
-    <item>Töne+Vibration/Töne/Vibration/Lautlos</item>
-  </string-array>
-
   <string-array name="entries_flash_widget">
     <item>Normal</item>
     <item>Hoch</item>
@@ -253,4 +229,12 @@
     <item>Lauter</item>
     <item>Leiser</item>
   </string-array>
+
+    <string-array name="entries_long_press_menu">
+        <item>Nichts</item>
+        <item>Bildschirmtastatur</item>
+        <item>Suche</item>
+        <item>Eigene Anwendung</item>
+        <item>Statusbar ein/aus</item>
+    </string-array>
 </resources>

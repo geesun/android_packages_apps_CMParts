@@ -345,6 +345,13 @@
     <string name="pref_screentimeout_mode_summary">Escolha como o botão de Tempo Esgotado de Tela alterna o modo</string>
     <string name="pref_ring_mode_title">Modos de som</string>
     <string name="pref_ring_mode_summary">Escolha como o botão de som alterna o modo</string>
+    <string name="cm_sound_mode_soundVib_vib">Som+Vibrar/Vibrar</string>
+    <string name="cm_sound_mode_sound_vib">Som/Vibrar</string>
+    <string name="cm_sound_mode_sound_silent">Som/Vibrar</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Som+Vib/Vib/Silencioso</string>
+    <string name="cm_sound_mode_sound_vib_silent">Som/Vibrar/Silencioso</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Som+Vibrar/Som/Vibrar/Silencioso</string>
+    <string name="cm_sound_mode_vib_silent">Vibrar/Silencioso</string>
     <string name="pref_flash_mode_title">Modo de Flash</string>
     <string name="pref_flash_mode_summary">Escolha Alto / Raio da Morte</string>
 
@@ -532,6 +539,7 @@
     <string name="cpu_max_freq_summary">Frequência máxima da CPU\nAtualmente: %s</string>
     <string name="cpu_set_on_boot">Definir na inicialização</string>
     <string name="cpu_set_on_boot_summary">Restaura as configurações de CPU na inicilização</string>
+
     <string name="gestures_already_present">Aviso: Um gesto similar está associado a outra ação!</string>
     <string name="gestures_flashlight">Lanterna</string>
     <string name="pref_lockscreen_gestures_color_title">Cor dos gestos</string>
@@ -551,6 +559,21 @@
     <string name="title_expanded_hide_onchange">Esconder ao mudar</string>
     <string name="summary_expanded_hide_onchange">Esconde a notificação após acionar um botão do widget</string>
     <string name="trackball_color_notice_summary">Não são todas as cores disponíveis para todos dispositivos.</string>
+
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Verde</string>
+    <string name="trackball_color_entry_white">Branco</string>
+    <string name="trackball_color_entry_red">Vermelho</string>
+    <string name="trackball_color_entry_blue">Azul</string>
+    <string name="trackball_color_entry_yellow">Amarelo</string>
+    <string name="trackball_color_entry_cyan">Ciano</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Rosa</string>
+    <string name="trackball_color_entry_orange">Laranja</string>
+    <string name="trackball_color_entry_light_blue">Azul Claro</string>
+    <string name="trackball_color_entry_random">Aleatório</string>
+    <string name="trackball_color_entry_none">Nenhum</string>
+    <string name="trackball_color_entry_amber">Amarelo</string>
     <string name="pref_overscroll_weight_title">Peso de sobrerolagem</string>
     <string name="pref_overscroll_weight_summary">Selecione o peso de sobrerolagem</string>
     <string name="pref_overscroll_summary">Escolhe o tipo de sobrerolagem</string>
@@ -633,4 +656,37 @@
     <string name="pref_user_defined_long_press_menu_title">Selecionar aplicação personalizada</string>
     <string name="pref_long_press_menu_title">Selecionar o comportamento</string>
     <string name="pref_long_press_menu_summary">Personalizar pressionar continuamente o menu</string>
+    <string name="expanded_haptic_feedback_title">Vibração</string>
+    <string name="expanded_haptic_feedback_summary">Habilitar/Desabilitar vibração</string>
+    <string name="pref_lockscreen_custom_background_title">Escolha o plano de fundo</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Escolha o plano de fundo</string>
+    <string name="pref_lockscreen_custom_background_summary">Escolha uma imagem ou cor como plano de fundo da tela de bloqueio</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Desabilitar a tela de bloqueio se a tela de bloqueio de segurança estiver habilitada</string>
+    <string name="pref_lockscreen_disable_on_security_title">Desabilitar tela de bloqueio</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Atual : Cor</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Atual : Imagem</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Atual : Padrão</string>
+    <string name="pref_lockscreen_background_result_successful">Plano de fundo foi modificado</string>
+    <string name="pref_lockscreen_background_result_not_successful">Plano de fundo não foi modificado</string>
+    <string name="pref_lockscreen_security_title">Trava de Segurança</string>
+    <string name="pref_lockscreen_security_delay_note_title">Nota</string>
+    <string name="pref_lockscreen_security_delay_note_summary">Embora a segurança de bloqueio de tela é definida como NENHUM, apenas as configurações de segurança do atraso de bloquio será usado</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Tempo limite de tela</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Tempo limite de desligamento de tela</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">Quanto tempo de atraso antes de habilitar a trava de segurança de tela quando o tempo limite de tela expira</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">Quanto tempo de atraso antes de habilitar a trava de segurança de tela quando a tela desliga</string>
+    <string name="pref_lockscreen_slide_title">Trava ao deslizar</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Nota</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Mesmo se habilitado, a trava ao desligar insegura só vai aparecer se o atraso da trava de segurança for maior que o atraso da trava ao deslizar</string>
+    <string name="pref_lockscreen_slide_delay_title">Habilitar atraso de trava ao deslizar</string>
+    <string name="pref_lockscreen_slide_delay_summary">Mostra o bloqueio de tela ao deslizar separadamente antes de mostrar a trava de segurança</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Tempo limite de tela</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Tempo limite de desligamento de tela</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">Quanto tempo de atraso antes de habilitar a trava de tela ao deslizar quando o tempo limite de tela expira</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">Quanto tempo de atraso antes de habilitar a trava de tela ao deslizar quando a tela desliga</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternar exibição de sinal</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Mostrar valor dBm em vez de barras de sinal</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Barras de sinal</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Texto de sinal</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Texto de sinal com dBm</string>
 </resources>

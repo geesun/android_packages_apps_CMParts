@@ -67,7 +67,7 @@
     <!-- User interface: Tablet tweaks -> volume remapping -->
     <string name="tablet_tweaks_input_head">Lautstärketasten belegen</string>
     <string name="tablet_tweaks_long_volp_action_title">Gedrückt halten für lauter</string>
-    <string name="tablet_tweaks_long_volp_action_summary">Aktion für Homescreen/Zurück/Menü/etc an Gedrückt halten der Lauter-Taste binden. (Begrenzter Zugriff auf Einschalten des Bildschirms)</string>
+    <string name="tablet_tweaks_long_volp_action_summary">Aktion für Homescreen/Zurück/Menü/etc an gedrückt Halten der Lauter-Taste binden. (Begrenzter Zugriff auf Einschalten des Bildschirms)</string>
     <string name="tablet_tweaks_long_volm_action_title">Gedrückt halten für leiser</string>
     <string name="tablet_tweaks_vol_both_action_title">Beide Lautstärketasten</string>
     <string name="tablet_tweaks_vol_both_action_summary">Hinweis: Einige Geräte führen einen Reset bei gleichzeitigem Drücken der Lautstärke und Ein/Ausschalttaste durch.</string>
@@ -175,11 +175,28 @@
     <string name="trackball_color_notice_title">HINWEIS:</string>
     <string name="trackball_color_notice_summary">Auf manchen Geräten sind nicht alle Farben von der LED darstellbar.</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Grün</string>
+    <string name="trackball_color_entry_white">Weiß</string>
+    <string name="trackball_color_entry_red">Rot</string>
+    <string name="trackball_color_entry_blue">Blau</string>
+    <string name="trackball_color_entry_yellow">Gelb</string>
+    <string name="trackball_color_entry_cyan">Cyan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Pink</string>
+    <string name="trackball_color_entry_orange">Orange</string>
+    <string name="trackball_color_entry_light_blue">Hellblau</string>
+    <string name="trackball_color_entry_random">Zufällig</string>
+    <string name="trackball_color_entry_none">Keine</string>
+    <string name="trackball_color_entry_amber">Amber</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNUNG: Kann Batterieentladung beschleunigen</string>
     <string name="notification_battery_warning">Diese Option hat sich als negativ für die Batterieladung erwiesen um ca.3% pro Stunde. Bei schnellerer Batterieentladung beim Pulsieren des Trackballs ist dies der Grund dafür. Diese Option nicht verwenden, wenn das schnellere Entladen vermieden werden soll.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Lockscreen deakt. bei Sperre</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Lockscreen deaktivieren wenn eine Display-Sperre (Muster, PIN, Passwort) aktiviert ist</string>
     <string name="pref_lockscreen_stylecfg_title">Aussehen</string>
     <string name="pref_lockscreen_stylecfg_summary">Das Aussehen des Lockscreens anpassen</string>
     <string name="pref_lockscreen_widgets_title">Widget-Optionen</string>
@@ -218,8 +235,8 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Eigener App-Starter</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Zeigt einen zweiten schiebbaren Tab bzw. rotierbaren Slider</string>
     <string name="pref_lockscreen_custom_app_activity_title">Verknüpfte Anwendung</string>
-    <string name="pref_lockscreen_custom_icon_style_title">Nachrichtensymbol für Anwendung</string>
-    <string name="pref_lockscreen_custom_icon_style_summary">Nachrichten-Icon statt CM-Icon für den App-Starter verwenden</string>
+    <string name="pref_lockscreen_custom_icon_style_title">Anwendungssymbol für Anwendung</string>
+    <string name="pref_lockscreen_custom_icon_style_summary">Anwendungs-Icon statt CM-Icon für den App-Starter verwenden</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Runterziehen zum Entsperren</string>
     <string name="pref_lockscreen_rotary_unlock_down_summary">Zum Entsperren des Bildschirms den rotierenden Slider runterziehen. Nach rechts schieben startet die App</string>
     <string name="pref_lockscreen_rotary_hide_arrows_title">Rotationspfeile verbergen</string>
@@ -231,9 +248,9 @@
     <string name="pref_in_call_style_title">Eingehender Anruf Stil</string>
     <string name="pref_in_call_style_summary">Stil der Anruf annehmen/ablehnen Tasten wählen</string>
     <string name="pref_volbtn_music_controls_title">Titelwahl mit Lautstärketasten</string>
-    <string name="pref_volbtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Titel suchen durch Gedrückt halten der Lautstärketasten</string>
+    <string name="pref_volbtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Titel suchen durch gedrückt Halten der Lautstärketasten</string>
     <string name="pref_cambtn_music_controls_title">Play/Pause mit Kamerataste</string>
-    <string name="pref_cambtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Wiedergabe fortsetzen/pausieren durch Gedrückt halten der Kamerataste</string>
+    <string name="pref_cambtn_music_controls_summary">Wenn Bildschirm ausgeschaltet ist, Wiedergabe fortsetzen/pausieren durch gedrückt Halten der Kamerataste</string>
     <string name="lockscreen_widgets_note_title">Hinweis</string>
     <string name="lockscreen_widgets_note_summary">Beim Stil \"Lense\" werden alle Widgets ausgeblendet mit Ausnahme der Musiksteuerung. Für einfacheres Umstellen zwischen den Locksreen-Stilen bleiben die weiteren Optionen dennoch aktiviert.</string>
 
@@ -243,20 +260,27 @@
     <string name="haptic_title">Haptisches Feedback</string>
     <string name="haptic_summary">Anpassungen für Stärke und Auftreten des haptischen Feedbacks (HF)</string>
     <string name="button_settings_title">Tasteneinstellungen</string>
-    <string name="long_press_home_title">HOME Gedrückt halten</string>
-    <string name="long_press_home_summary">Anzahl letzter Apps, etc...</string>
+    <string name="long_press_home_title">Home-Taste</string>
+    <string name="long_press_home_summary">Aktion für das gedrückt Halten der Home-Taste anpassen</string>
     <string name="input_search_key_title">Suchen-Taste</string>
     <string name="input_search_key_summary">Aktion für das Drücken der Suchen-Taste anpassen</string>
     <string name="pref_input_custom_search_app_toggle_title">App mit Suchen-Taste verknüpfen</string>
     <string name="pref_input_custom_search_app_toggle_summary">Starten einer festgelegten Anwendung beim Drücken der Suchen-Taste</string>
     <string name="pref_input_custom_search_app_activity_title">App festlegen</string>
     <string name="pref_input_custom_long_search_app_toggle_title">Suchen-Taste gedrückt halten</string>
-    <string name="pref_input_custom_long_search_app_toggle_summary">Starten einer festgelegten Anwendung beim Gedrückt halten der Suchen-Taste</string>
+    <string name="pref_input_custom_long_search_app_toggle_summary">Starten einer festgelegten Anwendung beim gedrückt Halten der Suchen-Taste</string>
+
+    <!-- Long Press Menu -->
+    <string name="long_press_menu_title">Menü-Taste</string>
+    <string name="long_press_menu_summary">Aktion für das gedrückt Halten der Menü-Taste anpassen</string>
+    <string name="pref_user_defined_long_press_menu_title">Wähle eigene Anwendung</string>
+    <string name="pref_long_press_menu_title">Wähle Aktion</string>
+    <string name="pref_long_press_menu_summary">Aktion beim gedrückt Halten der Menü-Taste anpassen</string>
 
     <!-- Long Press Home -->
     <string name="recent_apps_show_title">Titel für letzte Apps zeigen</string>
     <string name="recent_apps_num_title">Anzahl letzter Apps</string>
-    <string name="recent_apps_num_summary">Anzahl anzuzeigender Apps nach Gedrückt halten der Home-Taste</string>
+    <string name="recent_apps_num_summary">Anzahl anzuzeigender Apps nach gedrückt Halten der Home-Taste</string>
     <string name="dialog_recent_apps_num_title">Anzahl letzter Apps auswählen</string>
     <string name="use_custom_app_title">Andere Anwendung verwenden</string>
     <string name="use_custom_app_summary">Wähle andere Anwendung anstelle des Letzte-App-Dialogs</string>
@@ -385,7 +409,6 @@
     <string name="pref_render_effect_calibrated_cool">Kalibriert (N1) Kalt</string>
     <string name="pref_render_effect_red">Rot</string>
 
-
     <!-- Widget Types -->
     <string name="widget_render_effect_night">Nacht</string>
     <string name="widget_render_effect_terminal">Terminal</string>
@@ -397,7 +420,6 @@
     <string name="widget_render_effect_calibrated">Kal</string>
     <string name="widget_render_effect_calibrated_red">Kal Schwachrot</string>
     <string name="widget_render_effect_calibrated_cool">Kal Kalt</string>
-
 
     <!-- Expanded View Power Widget -->
     <string name="title_widget_buttons">Energie-Widget</string>
@@ -443,6 +465,13 @@
     <string name="pref_screentimeout_mode_summary">Verzögerung vor automatischer Bildschirmabschaltung anpassen</string>
     <string name="pref_ring_mode_title">Klingelmodi</string>
     <string name="pref_ring_mode_summary">Den Klingelmodus wählen</string>
+    <string name="cm_sound_mode_soundVib_vib">Töne+Vibration/Vibration</string>
+    <string name="cm_sound_mode_sound_vib">Töne/Vibration</string>
+    <string name="cm_sound_mode_sound_silent">Töne/Lautlos</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Töne+Vibration/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_sound_vib_silent">Töne/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Töne+Vibration/Töne/Vibration/Lautlos</string>
+    <string name="cm_sound_mode_vib_silent">Vibration/Lautlos</string>
     <string name="pref_flash_mode_title">Taschenlampe</string>
     <string name="pref_flash_mode_summary">Wähle zwischen normaler und hoher Helligkeit der Taschenlampe</string>
 
@@ -566,8 +595,8 @@
     <string name="pref_lockscreen_disable_unlock_tab">Entsperr-Slider verbergen</string>
     <string name="pref_lockscreen_disable_unlock_tab_summary">Hinweis: Es muss Trackball-, MENÜ- oder Gesten-Entsperren aktiviert sein bevor diese Option möglich ist</string>
     <string name="gestures_action_label">Aktion:</string>
-        <string name="gestures_draw_label">Geste:</string>
-        <string name="gestures_draw_for_label">Geste für \"<xliff:g id="action">%s</xliff:g>\":</string>
+    <string name="gestures_draw_label">Geste:</string>
+    <string name="gestures_draw_for_label">Geste für \"<xliff:g id="action">%s</xliff:g>\":</string>
     <string name="gestures_already_present">Warnung: Ähnliche Geste ist bereits mit einer anderen Aktion verknüpft!</string>
     <string name="gestures_run_in_background">Im Hintergrund ausführen</string>
 

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Generic -->
     <string name="app_name">CyanogenMod settings</string>
@@ -105,6 +104,11 @@
     <string name="ui_status_bar_toggle_brightness">Status bar brightness control</string>
     <string name="ui_status_bar_toggle_brightness_summary">Allows adjusting of brightness by sliding across statusbar</string>
     <string name="ui_status_bar_toggle_info">Automatic brightness is enabled</string>
+    <string name="ui_status_bar_cm_signal_text_title">Alternate signal display</string>
+    <string name="ui_status_bar_cm_signal_text_summary">Show dBm value instead of signal bars</string>
+    <string name="ui_status_bar_cm_signal_text_show_bars">Signal bars</string>
+    <string name="ui_status_bar_cm_signal_text_show_text">Signal text</string>
+    <string name="ui_status_bar_cm_signal_text_show_text_dbm">Signal text w/dBm</string>
 
     <!-- User interface : LED Notifications -->
     <string name="trackball_title">LED notifications</string>
@@ -125,10 +129,22 @@
     <!-- User interface : Lock Screen -->
     <string name="ui_lockscreen_title">Screen lock settings</string>
     <string name="pref_lockscreen_delay_title">Delay</string>
-    <string name="pref_lockscreen_timeout_lock_delay">Screen timeout delay</string>
-    <string name="pref_lockscreen_screenoff_lock_delay">Screen turned off delay</string>
-    <string name="pref_lockscreen_timeout_lock_delay_summary">How long to delay before enabling screen lock when screen times out</string>
-    <string name="pref_lockscreen_screenoff_lock_delay_summary">How long to delay before enabling screen lock when screen is turned off</string>
+    <string name="pref_lockscreen_security_title">Security Lock</string>
+    <string name="pref_lockscreen_security_delay_note_title">Note</string>
+    <string name="pref_lockscreen_security_delay_note_summary">While screen lock security is set to NONE only the security lock delay settings will be used</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay">Screen timeout delay</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay">Screen turned off delay</string>
+    <string name="pref_lockscreen_security_timeout_lock_delay_summary">How long to delay before enabling screen security lock when screen times out</string>
+    <string name="pref_lockscreen_security_screenoff_lock_delay_summary">How long to delay before enabling screen security lock when screen is turned off</string>
+    <string name="pref_lockscreen_slide_title">Slide Lock</string>
+    <string name="pref_lockscreen_slide_delay_note_title">Note</string>
+    <string name="pref_lockscreen_slide_delay_note_summary">Even if enabled, the unsecured slide lock will only appear if the security lock delay is longer than the slide lock delay</string>
+    <string name="pref_lockscreen_slide_delay_title">Enable slide lock delay</string>
+    <string name="pref_lockscreen_slide_delay_summary">Shows screen slide lock on a separate delay before showing security lock</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay">Screen timeout delay</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay">Screen turned off delay</string>
+    <string name="pref_lockscreen_slide_timeout_lock_delay_summary">How long to delay before enabling screen slide lock when screen times out</string>
+    <string name="pref_lockscreen_slide_screenoff_lock_delay_summary">How long to delay before enabling screen slide lock when screen is turned off</string>
 
     <!-- Color Picker -->
     <string name="title_color_picker">Pick a color</string>
@@ -176,11 +192,28 @@
     <string name="trackball_color_notice_title">NOTE:</string>
     <string name="trackball_color_notice_summary">Not all colors will display on all devices</string>
 
+    <!-- Trackball color entries -->
+    <string name="trackball_color_entry_green">Green</string>
+    <string name="trackball_color_entry_white">White</string>
+    <string name="trackball_color_entry_red">Red</string>
+    <string name="trackball_color_entry_blue">Blue</string>
+    <string name="trackball_color_entry_yellow">Yellow</string>
+    <string name="trackball_color_entry_cyan">Cyan</string>
+    <string name="trackball_color_entry_magenta">Magenta</string>
+    <string name="trackball_color_entry_pink">Pink</string>
+    <string name="trackball_color_entry_orange">Orange</string>
+    <string name="trackball_color_entry_light_blue">Light Blue</string>
+    <string name="trackball_color_entry_random">Random</string>
+    <string name="trackball_color_entry_none">None</string>
+    <string name="trackball_color_entry_amber">Amber</string>
+
     <!-- Trackball Settings : Warning dialog -->
     <string name="notification_battery_warning_title">WARNING: May cause battery drain</string>
     <string name="notification_battery_warning">This option has been proven to increase the amount of battery drain by ~3% per hour. If you notice an increase in drain during trackball lights pulsing then this option is why. Do not enable if you don\'t wish to incur the drain.</string>
 
     <!-- Lockscreen Overview -->
+    <string name="pref_lockscreen_disable_on_security_title">Disable lockscreen on security</string>
+    <string name="pref_lockscreen_disable_on_security_summary">Disable the lockscreen if security screen lock (pattern, PIN, password) is enabled</string>
     <string name="pref_lockscreen_stylecfg_title">Style options</string>
     <string name="pref_lockscreen_stylecfg_summary">Configure the lockscreen style and the corresponding settings</string>
     <string name="pref_lockscreen_widgets_title">Widget options</string>
@@ -219,6 +252,14 @@
     <string name="pref_lockscreen_custom_app_toggle_title">Custom app starter</string>
     <string name="pref_lockscreen_custom_app_toggle_summary">Shows a second slider on sliding style, shows a custom app dimple on rotary style</string>
     <string name="pref_lockscreen_custom_app_activity_title">Custom application</string>
+    <string name="pref_lockscreen_custom_background_title">Choose background</string>
+    <string name="pref_lockscreen_custom_background_dialog_title">Choose background</string>
+    <string name="pref_lockscreen_custom_background_summary">Choose image or color as lockscreen background</string>
+    <string name="pref_lockscreen_custom_background_summary_color">Current : Color</string>
+    <string name="pref_lockscreen_custom_background_summary_image">Current : Image</string>
+    <string name="pref_lockscreen_custom_background_summary_default">Current : Default</string>
+    <string name="pref_lockscreen_background_result_successful">Background changed</string>
+    <string name="pref_lockscreen_background_result_not_successful">Background not changed</string>
     <string name="pref_lockscreen_custom_icon_style_title">Use application icon for custom app</string>
     <string name="pref_lockscreen_custom_icon_style_summary">Uses application icon instead of CM icon for custom app starter</string>
     <string name="pref_lockscreen_rotary_unlock_down_title">Drag down to unlock</string>
@@ -247,7 +288,7 @@
     <string name="long_press_home_title">Long-press home settings</string>
     <string name="long_press_home_summary">Number of recent applications, etc</string>
 
-    <string name="input_search_key_title">Search key behaviour</string>
+    <string name="input_search_key_title">Search key behavior</string>
     <string name="input_search_key_summary">Define custom actions for search key and long-press search key</string>
     <string name="pref_input_custom_search_app_toggle_title">Search key app</string>
     <string name="pref_input_custom_search_app_toggle_summary">Starts a custom app when pressing the search key</string>
@@ -259,7 +300,7 @@
     <string name="long_press_menu_title">Long-press menu settings</string>
     <string name="long_press_menu_summary">Custom setting for long press menu</string>
     <string name="pref_user_defined_long_press_menu_title">Select custom application</string>
-    <string name="pref_long_press_menu_title">Choose behaviour</string>
+    <string name="pref_long_press_menu_title">Choose behavior</string>
     <string name="pref_long_press_menu_summary">Customize long press menu</string>
 
     <!-- Long Press Home -->
@@ -388,6 +429,10 @@
     <string name="pref_render_effect_title">Render effect</string>
     <string name="pref_render_effect_summary">Change what colors are used to draw the screen (potential battery savings)</string>
 
+    <!-- UI Settings : Haptic feedback -->
+    <string name="expanded_haptic_feedback_title">Haptic Feedback</string>
+    <string name="expanded_haptic_feedback_summary">Enable/Disable haptic feedback.</string>
+
     <string name="widget_name">RenderFX Widget</string>
     <string name="renderfx_temp">RenderFX</string>
     <string name="prefs_render_effect">Render Effect</string>
@@ -405,7 +450,7 @@
     <string name="pref_render_effect_calibrated_cool">Calibrated (N1) Cool</string>
     <string name="pref_render_effect_red">Red</string>
 
-    <!--  Widget Types -->
+    <!-- Widget Types -->
     <string name="widget_render_effect_night">Night</string>
     <string name="widget_render_effect_terminal">Term</string>
     <string name="widget_render_effect_blue">Blue</string>
@@ -463,6 +508,13 @@
     <string name="pref_screentimeout_mode_summary">Choose how the Screentimeout button changes modes</string>
     <string name="pref_ring_mode_title">Sound modes</string>
     <string name="pref_ring_mode_summary">Choose how the sound button changes modes</string>
+    <string name="cm_sound_mode_soundVib_vib">Sound+Vibrate/Vibrate</string>
+    <string name="cm_sound_mode_sound_vib">Sound/Vibrate</string>
+    <string name="cm_sound_mode_sound_silent">Sound/Silent</string>
+    <string name="cm_sound_mode_soundVib_vib_silent">Sound+Vib/Vib/Silent</string>
+    <string name="cm_sound_mode_sound_vib_silent">Sound/Vibrate/Silent</string>
+    <string name="cm_sound_mode_soundVib_sound_vib_silent">Sound+Vibrate/Sound/Vibrate/Silent</string>
+    <string name="cm_sound_mode_vib_silent">Vibrate/Silent</string>
     <string name="pref_flash_mode_title">Flash mode</string>
     <string name="pref_flash_mode_summary">Choose High / Death Ray</string>
 
@@ -559,7 +611,7 @@
     <string name="user_defined_key3">Quick Key 3</string>
     <string name="user_defined_not_set">Nothing Set</string>
 
-    <!--  Lockscreen gesture strings -->
+    <!-- Lockscreen gesture strings -->
     <string name="pref_lockscreen_gestures_enable_title">Use lockscreen gestures</string>
     <string name="pref_lockscreen_gestures_trail_title">Show gesture trails</string>
     <string name="pref_lockscreen_gestures_builder_title">Build gestures</string>
@@ -731,7 +783,4 @@
     <string name="perm_enable_management_summary">Enable application permissions management</string>
     <string name="perm_enable_warning_message">Warning!\nRevoking most permissions will most likely cause applications to malfunction. If an application with revoked permissions force-closes please grant the expected permissions or don\'t use the application.\nPlease DO NOT send bug reports to Cyanogenmod if an application with revoked permissions is not working as expected!</string>
     <string name="perm_enable_warning_title">Are you sure?</string>
-
-
-
 </resources>

@@ -17,7 +17,6 @@
 
 <resources>
 
-
     <string-array name="entries_install_location">
         <item>Automatica</item>
         <item>Interna</item>
@@ -28,21 +27,6 @@
         <item>Normale</item>
         <item>Piccola</item>
         <item>Non visualizzare(Default)</item>
-    </string-array>
-
-    <string-array name="entries_trackball_colors">
-        <item>Verde</item>
-        <item>Bianco</item>
-        <item>Rosso</item>
-        <item>Blu</item>
-        <item>Giallo</item>
-        <item>Ciano</item>
-        <item>Magenta</item>
-        <item>Rosa</item>
-        <item>Arancione</item>
-        <item>Blu Chiaro</item>
-        <item>Random</item>
-        <item>Nessuno</item>
     </string-array>
 
     <string-array name="pref_trackball_blink_rate_entries">
@@ -122,14 +106,6 @@
         <item>2G/Solo 3G/3G+2G</item>
     </string-array>
 
-    <string-array name="entries_ring_widget">
-        <item>Suono+Vibrazione/Vibrazione</item>
-        <item>Suono/Vibrazione</item>
-        <item>Suono/Silenzioso</item>
-        <item>Suono+Vib/Vib/Silenzioso</item>
-        <item>Suono/Vibrazione/Silenzioso</item>
-    </string-array>
-
     <string-array name="entries_flash_widget">
         <item>Normale</item>
         <item>Forte / Death Ray</item>
@@ -161,6 +137,12 @@
         <item>Tab scorrevoli</item>
         <item>Rotante</item>
         <item>Rotante ridisegnato</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Colore</item>
+        <item>Immagine personalizzata</item>
+        <item>Sfondo di default</item>
     </string-array>
 
     <string-array name="pref_lockscreen_music_headset_entries">
@@ -216,6 +198,12 @@
         <item>Cerca</item>
         <item>Applicazione personalizzata</item>
         <item>Mostra/nascondi barra di stato</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Impostazioni globali</item>
+        <item>On</item>
+        <item>Off</item>
     </string-array>
 
 </resources>

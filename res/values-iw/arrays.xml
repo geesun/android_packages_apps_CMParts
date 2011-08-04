@@ -11,25 +11,6 @@
     <item>פנימי</item>
     <item>חיצוני</item>
   </string-array>
-  <string-array name="entries_trackball_colors">
-    <item>ירוק</item>
-    <item>לבן</item>
-    <item>אדום</item>
-    <item>כחול</item>
-    <item>צהוב</item>
-    <item>טורקיז</item>
-    <item>מג\'נטה</item>
-    <item>ורוד</item>
-    <item>כתום</item>
-    <item>תכלת</item>
-    <item>אקראי</item>
-    <item>ללא</item>
-  </string-array>
-  <string-array name="entries_dual_led_colors">
-    <item>ירוק</item>
-    <item>ענבר</item>
-    <item>ללא</item>
-  </string-array>
   <string-array name="pref_trackball_blink_rate_entries">
     <item>2 (מהיר)</item>
     <item>3</item>
@@ -138,13 +119,6 @@
   <string-array name="entries_screentimeout_widget">
     <item>15s/1m/5m</item>
     <item>30s/2m/5m</item>
-  </string-array>
-  <string-array name="entries_ring_widget">
-    <item>צליל+רטט/רטט</item>
-    <item>צליל/רטט</item>
-    <item>צליל/שקט</item>
-    <item>צליל+רטט/רטט/שקט</item>
-    <item>צליל/רטט/שקט</item>
   </string-array>
   <string-array name="entries_flash_widget">
     <item>רגיל</item>

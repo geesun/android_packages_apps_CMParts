@@ -29,21 +29,6 @@
         <item>Нет (По умолчанию)</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Зелёный</item>
-        <item>Белый</item>
-        <item>Красный</item>
-        <item>Синий</item>
-        <item>Жёлтый</item>
-        <item>Голубой</item>
-        <item>Фиолетовый</item>
-        <item>Розовый</item>
-        <item>Оранжевый</item>
-        <item>Светло-синий</item>
-        <item>Случайно</item>
-        <item>Нет</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Быстро)</item>
         <item>3</item>
@@ -168,15 +153,6 @@
         <item>30сек/2мин/5мин</item>
     </string-array>
 
-    <string-array name="entries_ring_widget" translatable="false">
-        <item>Звук+Вибро/Вибро</item>
-        <item>Звук/Вибро</item>
-        <item>Звук/Беззвучный</item>
-        <item>Звук+Вибро/Вибро/Беззвучный</item>
-        <item>Звук/Вибро/Беззвучный</item>
-        <item>Звук+Вибро/Звук/Вибро/Беззвучный</item>
-    </string-array>
-
     <string-array name="entries_flash_widget" translatable="false">
         <item>Обычный</item>
         <item>Полная яркость</item>
@@ -248,6 +224,17 @@
         <item>Поиск</item>
         <item>Пользоват. приложение</item>
         <item>Перекл. строку состояния</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Настройки системы</item>
+        <item>Вкл.</item>
+        <item>Выкл.</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Цвет</item>
+        <item>Изображение</item>
     </string-array>
 
 </resources>

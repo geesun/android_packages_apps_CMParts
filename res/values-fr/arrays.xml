@@ -22,27 +22,6 @@
         <item>Externe</item>
     </string-array>
 
-    <string-array name="entries_trackball_colors">
-        <item>Vert</item>
-        <item>Blanc</item>
-        <item>Rouge</item>
-        <item>Bleu</item>
-        <item>Jaune</item>
-        <item>Cyan</item>
-        <item>Magenta</item>
-        <item>Rose</item>
-        <item>Orange</item>
-        <item>Blue ciel</item>
-        <item>Aléatoire</item>
-        <item>Aucune</item>
-    </string-array>
-
-    <string-array name="entries_dual_led_colors">
-        <item>Vert</item>
-        <item>Orange</item>
-        <item>Aucune</item>
-    </string-array>
-
     <string-array name="pref_trackball_blink_rate_entries">
         <item>2 (Rapide)</item>
         <item>3</item>
@@ -108,8 +87,14 @@
     <string-array name="pref_lockscreen_style_entries">
         <item>Curseurs</item>
         <item>Rotatif</item>
-        <item>Rotary revamped</item>
+        <item>Rotatif revamped</item>
         <item>Lense</item>
+    </string-array>
+
+    <string-array name="pref_lockscreen_background_entries">
+        <item>Couleur ou filtre</item>
+        <item>Image perso.</item>
+        <item>Par défaut</item>
     </string-array>
 
     <string-array name="pref_overscroll_effect_entries">
@@ -158,6 +143,26 @@
         <item>Recherche</item>
         <item>Application Perso</item>
         <item>Barre de notification</item>
+    </string-array>
+
+    <string-array name="haptic_feedback_entries">
+        <item>Par défaut</item>
+        <item>Marche</item>
+        <item>Arrêt</item>
+    </string-array>
+
+    <string-array name="entries_ring_widget">
+        <item>Son+Vibreur/Vibreur</item>
+        <item>Son/Vibreur</item>
+        <item>Son/Silence</item>
+        <item>Son+Vib/Vib/Silence</item>
+        <item>Son/Vibreur/Silence</item>
+        <item>Son+Vib/Son/Vib/Silence</item>
+    </string-array>
+
+    <string-array name="entries_flash_widget">
+        <item>Normal</item>
+        <item>Puissant / Death Ray</item>
     </string-array>
 
 </resources>

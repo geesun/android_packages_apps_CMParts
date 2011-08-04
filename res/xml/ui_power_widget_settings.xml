@@ -19,6 +19,10 @@
 			android:title="@string/title_widget_buttom" android:summary="@string/summary_widget_buttom"
 			android:defaultValue="true" android:dependency="expanded_widget" />
 
+		<ListPreference android:key="expanded_haptic_feedback"
+			android:dialogTitle="@string/expanded_haptic_feedback_title" android:title="@string/expanded_haptic_feedback_title"
+			android:summary="@string/expanded_haptic_feedback_summary" android:entries="@array/haptic_feedback_entries"
+			android:entryValues="@array/haptic_feedback_values" />
 		<Preference android:key="expanded_color_mask"
 			android:title="@string/expanded_color_mask" android:summary="@string/expanded_color_mask"
 			android:defaultValue="-1" android:dependency="expanded_widget" />
